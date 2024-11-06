@@ -1,13 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/main1.css">
     <title>Kordia</title>
 </head>
+
 <body>
-    
+    <header class="bg-main-blue">
+        <div class="mycontainer">
+            <nav class="navbar py-0 navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img class="navbar-logo" src="images/Kordia-K.png" alt="Logo">
+                </a>
+
+                <!-- Toggler for small screens -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link mx-3 active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="#">Artists</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="#">Why us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item mb-3 mb-lg-0">
+                            <a class="nav-link mx-3 btn-orange-solid px-4 rounded-pill" href="#">sign up</a>
+                            <a class="nav-link mx-3 btn-orange-regular border border-2 border-orange px-4 rounded-pill"
+                                href="#">log in</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="bg-main-blue pt-5">
+        <div class="mycontainer">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-6">
+                    <div>
+                        <img class="w-100 hero-logo" src="images/Logo.png" alt="img">
+                    </div>
+                    <h1 class="text-main-orange display-5 fw-semibold mt-3">ENCONTRA<span class="text-white">.</span>
+                        CONECT<span class="text-white">.</span> CRIA<span class="text-white">.</span></h1>
+                    <p class="text-white mt-5">
+                        Welcome to Kordia, the platform that’s changing the game for musicians and event planners alike.
+                        Whether you're looking to book a DJ, hire a band, or find the perfect musician for your event,
+                        Kordia makes it simple. We’re here to help you find the right talent for any occasion, from
+                        weddings and corporate events to private parties and more.
+                    </p>
+                    <div class="d-flex flex-wrap flex-sm-nowrap align-items-center my-5">
+                        <a class="text-uppercase btn-orange-solid rounded-pill text-white py-2 px-4 me-3 text-nowrap" href="#">Join Us</a>
+                        <div class="input-group mt-4 mt-sm-0">
+                            <input type="text" class="form-control focus-none border-0 rounded-start-pill py-2" placeholder="Search">
+                            <button class="btn-orange-solid border-0 px-3 rounded-end-pill" type="submit">Search</button> 
+                          </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-md-end justify-content-center">
+                        <img class="hero-img w-100" src="images/hero-image.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 </html>

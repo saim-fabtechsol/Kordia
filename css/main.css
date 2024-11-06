@@ -104,3 +104,52 @@ body {
     outline: none;
     box-shadow: none;
 }
+:root{
+    --main-blue:#003A5E;
+    --main-orange: rgba(255, 151, 0, 1);
+}
+
+.bg-main-orange{
+    background-color: var(--main-orange);
+}
+.text-main-orange{
+    color: var(--main-orange);
+}
+.bg-main-blue{
+    background-color: var(--main-blue);
+}
+.text-main-blue{
+    color: var(--main-blue);
+}
+.border-orange{
+    border-color: var(--main-orange) !important;
+}
+.btn-orange-solid{
+    text-decoration: none;
+    background-color: var(--main-orange);
+    display: inline-block;
+}
+.btn-orange-regular{
+    text-decoration: none;
+    display: inline-block;
+}
+.btn-orange-regular:hover{
+    background-color: var(--main-orange);
+}
+.navbar-logo{
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+}
+
+.navbar .nav-link{
+    text-wrap: nowrap;
+    text-transform: uppercase;
+}
+.navbar .nav-link:not(.active){
+    color: #fff;
+}
+
+.navbar .nav-link.active{
+    color: var(--main-orange);
+}
