@@ -105,10 +105,13 @@ body {
     box-shadow: none;
 }
 :root{
-    --main-blue:#003A5E;
+    --main-blue:rgba(0, 58, 94, 1);
     --main-orange: rgba(255, 151, 0, 1);
+    --navbar-bg:rgba(0, 58, 94, 0.9);
 }
-
+.navbar-bg{
+    background-color: var(--navbar-bg);
+}
 .bg-main-orange{
     background-color: var(--main-orange);
 }
@@ -152,4 +155,7 @@ body {
 
 .navbar .nav-link.active{
     color: var(--main-orange);
+}
+.text-12{
+    font-size: 12px;
 }

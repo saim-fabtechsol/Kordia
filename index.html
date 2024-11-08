@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/main1.css">
     <title>Kordia</title>
 </head>
 
-<body>
-    <header class="bg-main-blue">
+<body class="home-page">
+    <header class="navbar-bg fixed-top">
         <div class="mycontainer">
             <nav class="navbar py-0 navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="#">
@@ -19,9 +21,10 @@
                 </a>
 
                 <!-- Toggler for small screens -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler text-white focus-none border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
                 </button>
 
                 <!-- Navbar links -->
@@ -31,7 +34,7 @@
                             <a class="nav-link mx-3 active" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-3" href="#">Artists</a>
+                            <a class="nav-link mx-3" href="#artists">Artists</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mx-3" href="#">Why us</a>
@@ -40,7 +43,7 @@
                             <a class="nav-link mx-3" href="#">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-3" href="#">Contact</a>
+                            <a class="nav-link mx-3" href="#contactus">Contact</a>
                         </li>
                         <li class="nav-item mb-3 mb-lg-0">
                             <a class="nav-link mx-3 btn-orange-solid px-4 rounded-pill" href="#">sign up</a>
@@ -52,7 +55,7 @@
             </nav>
         </div>
     </header>
-    <section class="bg-main-blue pt-5">
+    <section class="bg-main-blue hero position-relative">
         <div class="mycontainer">
             <div class="row align-items-center justify-content-between">
                 <div class="col-md-6">
@@ -68,23 +71,700 @@
                         weddings and corporate events to private parties and more.
                     </p>
                     <div class="d-flex flex-wrap flex-sm-nowrap align-items-center my-5">
-                        <a class="text-uppercase btn-orange-solid rounded-pill text-white py-2 px-4 me-3 text-nowrap" href="#">Join Us</a>
+                        <a class="text-uppercase btn-orange-solid rounded-pill text-white py-2 px-4 me-3 text-nowrap"
+                            href="#">Join Us</a>
                         <div class="input-group mt-4 mt-sm-0">
-                            <input type="text" class="form-control focus-none border-0 rounded-start-pill py-2" placeholder="Search">
-                            <button class="btn-orange-solid border-0 px-3 rounded-end-pill" type="submit">Search</button> 
-                          </div>
+                            <input type="text" class="form-control focus-none border-0 rounded-start-pill py-2"
+                                placeholder="Search">
+                            <button class="btn-orange-solid border-0 px-3 text-white text-uppercase rounded-end-pill"
+                                type="submit">Search</button>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="d-flex justify-content-md-end justify-content-center">
+                    <div class="d-flex justify-content-md-end justify-content-center my-5">
                         <img class="hero-img w-100" src="images/hero-image.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <section class="featured-artists" id="artists">
+        <div class="mycontainer">
+            <div>
+                <h2 class="text-main-orange display-4 text-center fw-semibold text-uppercase">Featured Artists</h2>
+                <div class="mt-5">
+                    <ul class="nav nav-tabs justify-content-center col-lg-8 mx-auto" id="myTab" role="tablist">
+                        <li class="nav-item col-6 col-sm-4 col-md-2" role="presentation">
+                            <a class="nav-link active" id="musician-tab" data-bs-toggle="tab" data-bs-target="#musician"
+                                type="button" role="tab" aria-controls="musician" aria-selected="true">
+                                <div class="d-flex flex-column align-items-center">
+                                    <img class="w-100" src="images/Musician.png" alt="img">
+                                    <p class="mb-0 text-main-blue fw-semibold text-center">Musician</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item col-6 col-sm-4 col-md-2" role="presentation">
+                            <a class="nav-link" id="musical-genre-tab" data-bs-toggle="tab"
+                                data-bs-target="#musical-genre" type="button" role="tab" aria-controls="musical-genre"
+                                aria-selected="false">
+                                <div class="d-flex flex-column align-items-center">
+                                    <img class="w-100" src="images/Musical-genre.png" alt="img">
+                                    <p class="mb-0 text-main-blue fw-semibold text-center">Musical genre</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item col-6 col-sm-4 col-md-2" role="presentation">
+                            <a class="nav-link" id="bands-tab" data-bs-toggle="tab" data-bs-target="#bands"
+                                type="button" role="tab" aria-controls="bands" aria-selected="false">
+                                <div class="d-flex flex-column align-items-center">
+                                    <img class="w-100" src="images/bands.png" alt="img">
+                                    <p class="mb-0 text-main-blue fw-semibold text-center">Bands</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item col-6 col-sm-4 col-md-2" role="presentation">
+                            <a class="nav-link" id="projects-tab" data-bs-toggle="tab" data-bs-target="#projects"
+                                type="button" role="tab" aria-controls="projects" aria-selected="false">
+                                <div class="d-flex flex-column align-items-center">
+                                    <img class="w-100" src="images/projects.png" alt="img">
+                                    <p class="mb-0 text-main-blue fw-semibold text-center">Projects</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item col-6 col-sm-4 col-md-2" role="presentation">
+                            <a class="nav-link" id="ensembles-tab" data-bs-toggle="tab" data-bs-target="#ensembles"
+                                type="button" role="tab" aria-controls="ensembles" aria-selected="false">
+                                <div class="d-flex flex-column align-items-center">
+                                    <img class="w-100" src="images/ensembles.png" alt="img">
+                                    <p class="mb-0 text-main-blue fw-semibold text-center">Ensembles</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item col-6 col-sm-4 col-md-2" role="presentation">
+                            <a class="nav-link" id="ensembles2-tab" data-bs-toggle="tab" data-bs-target="#ensembles2"
+                                type="button" role="tab" aria-controls="ensembles2" aria-selected="false">
+                                <div class="d-flex flex-column align-items-center">
+                                    <img class="w-100" src="images/music-equalizer.png" alt="img">
+                                    <p class="mb-0 text-main-blue fw-semibold text-center">Ensembles</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content mt-5 pt-5" id="myTabContent">
+                        <div class="tab-pane fade show active" id="musician" role="tabpanel"
+                            aria-labelledby="musician-tab">
+                            <div class="position-relative">
+                                <div
+                                    class="musician-slider-prev d-none d-sm-block position-absolute translate-middle-y translate-middle-x top-50 start-0 z-2">
+                                    <img class="slider-arrow" src="images/slider-prev.png" alt="">
+                                </div>
+                                <div class="col-lg-10 mx-auto">
+                                    <div class="musician-slider row mx-3 mx-sm-5">
+                                        <div class="col-md-6 col-lg-4 my-5">
+                                            <div class="card right-leaned mx-auto p-3 w-90 position-reletive">
+                                                <img src="images/musician-slider-1.jpeg" class="card-img-top" alt="img">
+                                                <div class="card-body">
+                                                    <p
+                                                        class="text-uppercase text-center fw-medium text-main-blue small">
+                                                        Valentin | <span class="text-main-orange">Batteur</span></p>
+                                                    <p class="featured-card-paragraph text-12 text-center">
+                                                        Propulse le groupe avec une énergie débordante et une précision
+                                                        féroce.
+                                                    </p>
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <a href="#"><img class="icon-15px mx-2"
+                                                                src="images/spotify-orange.png" alt="img"></a>
+                                                        <a href="#"><img class="icon-15px mx-2"
+                                                                src="images/insta-orange.png" alt="img"></a>
+                                                        <a href="#"><img class="icon-15px mx-2"
+                                                                src="images/chat-orange.png" alt="img"></a>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="position-absolute top-0 start-50 translate-middle left-leaned">
+                                                    <img class="tape" src="images/tape.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 my-5">
+                                            <div class="card left-leaned mx-auto p-3 w-80 position-relative">
+                                                <img src="images/musician-slider-2.jpeg" class="card-img-top" alt="img">
+                                                <div class="card-body">
+                                                    <p
+                                                        class="text-uppercase text-center fw-medium text-main-blue small">
+                                                        Valentin | <span class="text-main-orange">Batteur</span></p>
+                                                    <p class="featured-card-paragraph text-12 text-center">
+                                                        Propulse le groupe avec une énergie débordante et une précision
+                                                        féroce.
+                                                    </p>
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <a href="#"><img class="icon-15px mx-2"
+                                                                src="images/spotify-orange.png" alt="img"></a>
+                                                        <a href="#"><img class="icon-15px mx-2"
+                                                                src="images/insta-orange.png" alt="img"></a>
+                                                        <a href="#"><img class="icon-15px mx-2"
+                                                                src="images/chat-orange.png" alt="img"></a>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="position-absolute top-0 start-50 translate-middle left-leaned">
+                                                    <img class="tape" src="images/tape.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 my-5">
+                                            <div class="card right-leaned mx-auto p-3 w-80 position-relative">
+                                                <img src="images/musician-slider-3.jpeg" class="card-img-top object-top"
+                                                    alt="img">
+                                                <div class="card-body">
+                                                    <p
+                                                        class="text-uppercase text-center fw-medium text-main-blue small">
+                                                        Valentin | <span class="text-main-orange">Batteur</span></p>
+                                                    <p class="featured-card-paragraph text-12 text-center">
+                                                        Propulse le groupe avec une énergie débordante et une précision
+                                                        féroce.
+                                                    </p>
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <a href="#"><img class="icon-15px mx-2"
+                                                                src="images/spotify-orange.png" alt="img"></a>
+                                                        <a href="#"><img class="icon-15px mx-2"
+                                                                src="images/insta-orange.png" alt="img"></a>
+                                                        <a href="#"><img class="icon-15px mx-2"
+                                                                src="images/chat-orange.png" alt="img"></a>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="position-absolute top-0 start-50 translate-middle right-leaned">
+                                                    <img class="tape right-leaned" src="images/tape.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 my-5">
+                                            <div class="card right-leaned mx-auto p-3 w-90 position-reletive">
+                                                <img src="images/musician-slider-1.jpeg" class="card-img-top" alt="img">
+                                                <div class="card-body">
+                                                    <p
+                                                        class="text-uppercase text-center fw-medium text-main-blue small">
+                                                        Valentin | <span class="text-main-orange">Batteur</span></p>
+                                                    <p class="featured-card-paragraph text-12 text-center">
+                                                        Propulse le groupe avec une énergie débordante et une précision
+                                                        féroce.
+                                                    </p>
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <a href="#"><img class="icon-15px mx-2"
+                                                                src="images/spotify-orange.png" alt="img"></a>
+                                                        <a href="#"><img class="icon-15px mx-2"
+                                                                src="images/insta-orange.png" alt="img"></a>
+                                                        <a href="#"><img class="icon-15px mx-2"
+                                                                src="images/chat-orange.png" alt="img"></a>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="position-absolute top-0 start-50 translate-middle left-leaned">
+                                                    <img class="tape" src="images/tape.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 my-5">
+                                            <div class="card left-leaned mx-auto p-3 w-80 position-relative">
+                                                <img src="images/musician-slider-2.jpeg" class="card-img-top" alt="img">
+                                                <div class="card-body">
+                                                    <p
+                                                        class="text-uppercase text-center fw-medium text-main-blue small">
+                                                        Valentin | <span class="text-main-orange">Batteur</span></p>
+                                                    <p class="featured-card-paragraph text-12 text-center">
+                                                        Propulse le groupe avec une énergie débordante et une précision
+                                                        féroce.
+                                                    </p>
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <a href="#"><img class="icon-15px mx-2"
+                                                                src="images/spotify-orange.png" alt="img"></a>
+                                                        <a href="#"><img class="icon-15px mx-2"
+                                                                src="images/insta-orange.png" alt="img"></a>
+                                                        <a href="#"><img class="icon-15px mx-2"
+                                                                src="images/chat-orange.png" alt="img"></a>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="position-absolute top-0 start-50 translate-middle left-leaned">
+                                                    <img class="tape" src="images/tape.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 my-5">
+                                            <div class="card right-leaned mx-auto p-3 w-80 position-relative">
+                                                <img src="images/musician-slider-3.jpeg" class="card-img-top object-top"
+                                                    alt="img">
+                                                <div class="card-body">
+                                                    <p
+                                                        class="text-uppercase text-center fw-medium text-main-blue small">
+                                                        Valentin | <span class="text-main-orange">Batteur</span></p>
+                                                    <p class="featured-card-paragraph text-12 text-center">
+                                                        Propulse le groupe avec une énergie débordante et une précision
+                                                        féroce.
+                                                    </p>
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <a href="#"><img class="icon-15px mx-2"
+                                                                src="images/spotify-orange.png" alt="img"></a>
+                                                        <a href="#"><img class="icon-15px mx-2"
+                                                                src="images/insta-orange.png" alt="img"></a>
+                                                        <a href="#"><img class="icon-15px mx-2"
+                                                                src="images/chat-orange.png" alt="img"></a>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="position-absolute top-0 start-50 translate-middle right-leaned">
+                                                    <img class="tape right-leaned" src="images/tape.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="musician-slider-next d-none d-sm-block position-absolute translate-middle-y top-50 end-0 z-2">
+                                    <img class="slider-arrow" src="images/slider-next.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="musical-genre" role="tabpanel"
+                            aria-labelledby="musical-genre-tab">
+                            <div class="position-relative">
+                                <div
+                                    class="Musical-genre-slider-prev d-none d-sm-block position-absolute translate-middle-y translate-middle-x top-50 start-0 z-2">
+                                    <img class="slider-arrow" src="images/slider-prev.png" alt="">
+                                </div>
+                                <div class="col-lg-10 mx-auto">
+                                    <div class="Musical-genre-slider row mx-3 mx-sm-5">
+                                        <div class="col-md-6 col-lg-4 my-5">
+                                            <div class="card right-leaned mx-auto p-3 w-90 position-reletive">
+                                                <img src="images/musician-slider-1.jpeg" class="card-img-top" alt="img">
+                                                <div class="card-body">
+                                                    <p
+                                                        class="text-uppercase text-center fw-medium text-main-blue small">
+                                                        Valentin | <span class="text-main-orange">Batteur</span></p>
+                                                    <p class="featured-card-paragraph text-12 text-center">
+                                                        Propulse le groupe avec une énergie débordante et une précision
+                                                        féroce.
+                                                    </p>
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <a href="#"><img class="icon-15px mx-2"
+                                                                src="images/spotify-orange.png" alt="img"></a>
+                                                        <a href="#"><img class="icon-15px mx-2"
+                                                                src="images/insta-orange.png" alt="img"></a>
+                                                        <a href="#"><img class="icon-15px mx-2"
+                                                                src="images/chat-orange.png" alt="img"></a>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="position-absolute top-0 start-50 translate-middle left-leaned">
+                                                    <img class="tape" src="images/tape.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 my-5">
+                                            <div class="card left-leaned mx-auto p-3 w-80 position-relative">
+                                                <img src="images/musician-slider-2.jpeg" class="card-img-top" alt="img">
+                                                <div class="card-body">
+                                                    <p
+                                                        class="text-uppercase text-center fw-medium text-main-blue small">
+                                                        Valentin | <span class="text-main-orange">Batteur</span></p>
+                                                    <p class="featured-card-paragraph text-12 text-center">
+                                                        Propulse le groupe avec une énergie débordante et une précision
+                                                        féroce.
+                                                    </p>
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <a href="#"><img class="icon-15px mx-2"
+                                                                src="images/spotify-orange.png" alt="img"></a>
+                                                        <a href="#"><img class="icon-15px mx-2"
+                                                                src="images/insta-orange.png" alt="img"></a>
+                                                        <a href="#"><img class="icon-15px mx-2"
+                                                                src="images/chat-orange.png" alt="img"></a>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="position-absolute top-0 start-50 translate-middle left-leaned">
+                                                    <img class="tape" src="images/tape.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 my-5">
+                                            <div class="card right-leaned mx-auto p-3 w-80 position-relative">
+                                                <img src="images/musician-slider-3.jpeg" class="card-img-top object-top"
+                                                    alt="img">
+                                                <div class="card-body">
+                                                    <p
+                                                        class="text-uppercase text-center fw-medium text-main-blue small">
+                                                        Valentin | <span class="text-main-orange">Batteur</span></p>
+                                                    <p class="featured-card-paragraph text-12 text-center">
+                                                        Propulse le groupe avec une énergie débordante et une précision
+                                                        féroce.
+                                                    </p>
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <a href="#"><img class="icon-15px mx-2"
+                                                                src="images/spotify-orange.png" alt="img"></a>
+                                                        <a href="#"><img class="icon-15px mx-2"
+                                                                src="images/insta-orange.png" alt="img"></a>
+                                                        <a href="#"><img class="icon-15px mx-2"
+                                                                src="images/chat-orange.png" alt="img"></a>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="position-absolute top-0 start-50 translate-middle right-leaned">
+                                                    <img class="tape right-leaned" src="images/tape.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 my-5">
+                                            <div class="card right-leaned mx-auto p-3 w-90 position-reletive">
+                                                <img src="images/musician-slider-1.jpeg" class="card-img-top" alt="img">
+                                                <div class="card-body">
+                                                    <p
+                                                        class="text-uppercase text-center fw-medium text-main-blue small">
+                                                        Valentin | <span class="text-main-orange">Batteur</span></p>
+                                                    <p class="featured-card-paragraph text-12 text-center">
+                                                        Propulse le groupe avec une énergie débordante et une précision
+                                                        féroce.
+                                                    </p>
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <a href="#"><img class="icon-15px mx-2"
+                                                                src="images/spotify-orange.png" alt="img"></a>
+                                                        <a href="#"><img class="icon-15px mx-2"
+                                                                src="images/insta-orange.png" alt="img"></a>
+                                                        <a href="#"><img class="icon-15px mx-2"
+                                                                src="images/chat-orange.png" alt="img"></a>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="position-absolute top-0 start-50 translate-middle left-leaned">
+                                                    <img class="tape" src="images/tape.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 my-5">
+                                            <div class="card left-leaned mx-auto p-3 w-80 position-relative">
+                                                <img src="images/musician-slider-2.jpeg" class="card-img-top" alt="img">
+                                                <div class="card-body">
+                                                    <p
+                                                        class="text-uppercase text-center fw-medium text-main-blue small">
+                                                        Valentin | <span class="text-main-orange">Batteur</span></p>
+                                                    <p class="featured-card-paragraph text-12 text-center">
+                                                        Propulse le groupe avec une énergie débordante et une précision
+                                                        féroce.
+                                                    </p>
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <a href="#"><img class="icon-15px mx-2"
+                                                                src="images/spotify-orange.png" alt="img"></a>
+                                                        <a href="#"><img class="icon-15px mx-2"
+                                                                src="images/insta-orange.png" alt="img"></a>
+                                                        <a href="#"><img class="icon-15px mx-2"
+                                                                src="images/chat-orange.png" alt="img"></a>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="position-absolute top-0 start-50 translate-middle left-leaned">
+                                                    <img class="tape" src="images/tape.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 my-5">
+                                            <div class="card right-leaned mx-auto p-3 w-80 position-relative">
+                                                <img src="images/musician-slider-3.jpeg" class="card-img-top object-top"
+                                                    alt="img">
+                                                <div class="card-body">
+                                                    <p
+                                                        class="text-uppercase text-center fw-medium text-main-blue small">
+                                                        Valentin | <span class="text-main-orange">Batteur</span></p>
+                                                    <p class="featured-card-paragraph text-12 text-center">
+                                                        Propulse le groupe avec une énergie débordante et une précision
+                                                        féroce.
+                                                    </p>
+                                                    <div class="d-flex justify-content-center align-items-center">
+                                                        <a href="#"><img class="icon-15px mx-2"
+                                                                src="images/spotify-orange.png" alt="img"></a>
+                                                        <a href="#"><img class="icon-15px mx-2"
+                                                                src="images/insta-orange.png" alt="img"></a>
+                                                        <a href="#"><img class="icon-15px mx-2"
+                                                                src="images/chat-orange.png" alt="img"></a>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="position-absolute top-0 start-50 translate-middle right-leaned">
+                                                    <img class="tape right-leaned" src="images/tape.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="Musical-genre-slider-next d-none d-sm-block position-absolute translate-middle-y top-50 end-0 z-2">
+                                    <img class="slider-arrow" src="images/slider-next.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="bands" role="tabpanel" aria-labelledby="bands-tab">
+                            bands
+                        </div>
+                        <div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="bands-tab">
+                            projects
+                        </div>
+                        <div class="tab-pane fade" id="ensembles" role="tabpanel" aria-labelledby="bands-tab">
+                            Ensembles
+                        </div>
+                        <div class="tab-pane fade" id="ensembles2" role="tabpanel" aria-labelledby="bands-tab">
+                            Ensembles2
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center mt-5">
+                    <a class="btn-orange-solid text-main-blue py-3 px-5 rounded-pill text-uppercase fs-5 fw-medium"
+                        href="#">Browse More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="my-5 bg-main-blue testimonials">
+        <div class="mycontainer">
+            <div>
+                <h2 class="text-main-orange display-4 text-center fw-semibold text-uppercase">testimonials</h2>
+                <div class="position-relative">
+                    <div
+                        class="testimonial-slider-prev d-none d-sm-block position-absolute translate-middle-y translate-middle-x top-50 start-0 z-2">
+                        <img class="slider-arrow" src="images/slider-prev.png" alt="">
+                    </div>
+                    <div class="col-lg-10 mx-auto">
+                        <div class="testimonial-slider row mx-sm-5">
+                            <div class="d-flex flex-column align-items-center mt-5">
+                                <div class="position-reletive bg-white right-leaned testimonial-img-box p-2 pb-3">
+                                    <img class="w-100 h-100 object-fit-cover" src="images/testimonials-profile.jpeg"
+                                        alt="img">
+                                    <div class="position-absolute top-0 start-50 translate-middle">
+                                        <img class="pin-img" src="images/pin.png" alt="img">
+                                    </div>
+                                </div>
+                                <p class="text-white text-center mt-5 max-w-800px text-lsm-14">
+                                    Kordia made finding the perfect band for our wedding so easy! The platform is
+                                    incredibly intuitive, and we were able to connect with talented musicians in no
+                                    time. Everything from the contract to payment was handled smoothly. Highly
+                                    recommend!
+                                </p>
+                                <p class="text-main-orange display-5 mb-0"><i class="fa-solid fa-quote-left"></i></p>
+                                <p class="text-center text-main-orange fs-5 mb-0">Sarah M</p>
+                                <p class="text-center text-main-orange small">Event Organizer</p>
+                            </div>
+                            <div class=" d-flex flex-column align-items-center mt-5">
+                                <div class="position-reletive bg-white right-leaned testimonial-img-box p-2 pb-3">
+                                    <img class="w-100 h-100 object-fit-cover" src="images/testimonials-profile.jpeg"
+                                        alt="img">
+                                    <div class="position-absolute top-0 start-50 translate-middle">
+                                        <img class="pin-img" src="images/pin.png" alt="img">
+                                    </div>
+                                </div>
+                                <p class="text-white text-center mt-5 max-w-800px text-lsm-14">
+                                    Kordia made finding the perfect band for our wedding so easy! The platform is
+                                    incredibly intuitive, and we were able to connect with talented musicians in no
+                                    time. Everything from the contract to payment was handled smoothly. Highly
+                                    recommend!
+                                </p>
+                                <p class="text-main-orange display-5 mb-0"><i class="fa-solid fa-quote-left"></i></p>
+                                <p class="text-center text-main-orange fs-5 mb-0">Sarah M</p>
+                                <p class="text-center text-main-orange small">Event Organizer</p>
+                            </div>
+                            <div class=" d-flex flex-column align-items-center mt-5">
+                                <div class="position-reletive bg-white right-leaned testimonial-img-box p-2 pb-3">
+                                    <img class="w-100 h-100 object-fit-cover" src="images/testimonials-profile.jpeg"
+                                        alt="img">
+                                    <div class="position-absolute top-0 start-50 translate-middle">
+                                        <img class="pin-img" src="images/pin.png" alt="img">
+                                    </div>
+                                </div>
+                                <p class="text-white text-center mt-5 max-w-800px text-lsm-14">
+                                    Kordia made finding the perfect band for our wedding so easy! The platform is
+                                    incredibly intuitive, and we were able to connect with talented musicians in no
+                                    time. Everything from the contract to payment was handled smoothly. Highly
+                                    recommend!
+                                </p>
+                                <p class="text-main-orange display-5 mb-0"><i class="fa-solid fa-quote-left"></i></p>
+                                <p class="text-center text-main-orange fs-5 mb-0">Sarah M</p>
+                                <p class="text-center text-main-orange small">Event Organizer</p>
+                            </div>
+                            <div class=" d-flex flex-column align-items-center mt-5">
+                                <div class="position-reletive bg-white right-leaned testimonial-img-box p-2 pb-3">
+                                    <img class="w-100 h-100 object-fit-cover" src="images/testimonials-profile.jpeg"
+                                        alt="img">
+                                    <div class="position-absolute top-0 start-50 translate-middle">
+                                        <img class="pin-img" src="images/pin.png" alt="img">
+                                    </div>
+                                </div>
+                                <p class="text-white text-center mt-5 max-w-800px text-lsm-14">
+                                    Kordia made finding the perfect band for our wedding so easy! The platform is
+                                    incredibly intuitive, and we were able to connect with talented musicians in no
+                                    time. Everything from the contract to payment was handled smoothly. Highly
+                                    recommend!
+                                </p>
+                                <p class="text-main-orange display-5 mb-0"><i class="fa-solid fa-quote-left"></i></p>
+                                <p class="text-center text-main-orange fs-5 mb-0">Sarah M</p>
+                                <p class="text-center text-main-orange small">Event Organizer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slider-next d-none d-sm-block position-absolute translate-middle-y top-50 end-0 z-2">
+                        <img class="slider-arrow" src="images/slider-next.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-us" id="contactus">
+        <div class="mycontainer">
+            <h2 class="text-main-orange display-4 text-center fw-semibold text-uppercase">Get In Touch</h2>
+            <h4 class="text-main-orange mt-4 fw-semibold text-uppercase">Contact Us</h4>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <form action="">
+                        <div class="mt-4">
+                            <label class="text-uppercase fs-5 ps-2 fw-medium text-main-blue" for="name">Name</label>
+                            <input class="w-100 contactus-input rounded-pill py-1 px-3 focus-none" type="text" id="name" name="name" placeholder="Name Here">
+                        </div>
+                        <div class="mt-4">
+                            <label class="text-uppercase fs-5 ps-2 fw-medium text-main-blue" for="email">Email</label>
+                            <input class="w-100 contactus-input rounded-pill py-1 px-3 focus-none" type="email" id="email" name="email" placeholder="USER@domain.com">
+                        </div>
+                        <div class="mt-4">
+                            <label class="text-uppercase fs-5 ps-2 fw-medium text-main-blue" for="subject">Subject</label>
+                            <input class="w-100 contactus-input rounded-pill py-1 px-3 focus-none" type="text" id="subject" name="subject" placeholder="Subject">
+                        </div>
+                        <div class="mt-4">
+                            <label class="text-uppercase fs-5 ps-2 fw-medium text-main-blue" for="message">Message</label>
+                            <textarea class="w-100 contactus-input rounded-4 p-3 focus-none resize-none" name="message" id="message" rows="5" placeholder="Type Any message here......."></textarea>
+                        </div>
+                        <div class="mt-4">
+                            <input class="btn-orange-solid border-0 w-100 rounded-pill text-white text-uppercase py-2" type="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card right-leaned mx-auto p-3 w-90 position-relative my-5">
+                                <img src="images/conatct-card-1.jpeg" class="card-img-top object-top"
+                                    alt="img">
+                                <div class="card-body">
+                                    <p
+                                        class="text-uppercase text-center fw-medium text-main-blue small">
+                                        Valentin | <span class="text-main-orange">Batteur</span></p>
+                                    <p class="featured-card-paragraph text-12 text-center">
+                                        Propulse le groupe avec une énergie débordante et une précision
+                                        féroce.
+                                    </p>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <a href="#"><img class="icon-15px mx-2"
+                                                src="images/spotify-orange.png" alt="img"></a>
+                                        <a href="#"><img class="icon-15px mx-2"
+                                                src="images/insta-orange.png" alt="img"></a>
+                                        <a href="#"><img class="icon-15px mx-2"
+                                                src="images/chat-orange.png" alt="img"></a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="position-absolute top-0 start-50 translate-middle right-leaned">
+                                    <img class="tape right-leaned" src="images/tape.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card left-leaned mx-auto p-3 w-80 position-relative my-5">
+                                <img src="images/contact-card-2.jpeg" class="card-img-top object-top"
+                                    alt="img">
+                                <div class="card-body">
+                                    <p
+                                        class="text-uppercase text-center fw-medium text-main-blue small">
+                                        Valentin | <span class="text-main-orange">Batteur</span></p>
+                                    <p class="featured-card-paragraph text-12 text-center">
+                                        Propulse le groupe avec une énergie débordante et une précision
+                                        féroce.
+                                    </p>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <a href="#"><img class="icon-15px mx-2"
+                                                src="images/spotify-orange.png" alt="img"></a>
+                                        <a href="#"><img class="icon-15px mx-2"
+                                                src="images/insta-orange.png" alt="img"></a>
+                                        <a href="#"><img class="icon-15px mx-2"
+                                                src="images/chat-orange.png" alt="img"></a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="position-absolute top-0 start-50 translate-middle right-leaned">
+                                    <img class="tape right-leaned" src="images/tape.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-main-blue pb-5 home-footer">
+        <div class="mycontainer">
+            <div class="row">
+                <div class="col-xl-4">
+                    <div class="d-flex flex-column align-items-center align-items-sm-start">
+                        <div>
+                            <img class="footer-logo" src="images/footer-logo.png" alt="img">
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <a class="mx-2" href="#"><img class="icon-30px" src="images/facebook-orange.png" alt="img"></a>
+                            <a class="mx-2" href="#"><img class="icon-30px" src="images/insta-orange.png" alt="img"></a>
+                            <a class="mx-2" href="#"><img class="icon-30px" src="images/chat-orange.png" alt="img"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-8">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3 text-center text-sm-start mt-5">
+                            <h4 class="text-main-orange fs-6 fw-semibold text-uppercase">Page Menus</h4>
+                            <ul class=" list-unstyled mt-3">
+                               <li class="my-2"><a class="text-white text-decoration-none" href="#">Home</a></li> 
+                               <li class="my-2"><a class="text-white text-decoration-none" href="#">Album</a></li> 
+                               <li class="my-2"><a class="text-white text-decoration-none" href="#">Artists</a></li> 
+                               <li class="my-2"><a class="text-white text-decoration-none" href="#">Sound</a></li> 
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-md-3 text-center text-sm-start mt-5">
+                            <h4 class="text-main-orange fs-6 fw-semibold text-uppercase">Community</h4>
+                            <ul class=" list-unstyled mt-3">
+                               <li class="my-2"><a class="text-white text-decoration-none" href="#">For Artist</a></li> 
+                               <li class="my-2"><a class="text-white text-decoration-none" href="#">Developer</a></li> 
+                               <li class="my-2"><a class="text-white text-decoration-none" href="#">Ads</a></li> 
+                               <li class="my-2"><a class="text-white text-decoration-none" href="#">Inverstor</a></li> 
+                               <li class="my-2"><a class="text-white text-decoration-none" href="#">Vendor</a></li> 
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-md-3 text-center text-sm-start mt-5">
+                            <h4 class="text-main-orange fs-6 fw-semibold text-uppercase">Term & Condition</h4>
+                            <ul class=" list-unstyled mt-3">
+                               <li class="my-2"><a class="text-white text-decoration-none" href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-md-3 text-center text-sm-start mt-5">
+                            <h4 class="text-main-orange fs-6 fw-semibold text-uppercase">Social Media</h4>
+                            <ul class=" list-unstyled mt-3">
+                               <li class="my-2"><a class="text-white text-decoration-none" href="#">Twitter</a></li> 
+                               <li class="my-2"><a class="text-white text-decoration-none" href="#">Tiktok</a></li> 
+                               <li class="my-2"><a class="text-white text-decoration-none" href="#">Facebook</a></li> 
+                               <li class="my-2"><a class="text-white text-decoration-none" href="#">Instagram</a></li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/f9a70f49f9.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 
