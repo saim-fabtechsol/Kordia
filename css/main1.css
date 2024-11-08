@@ -1,0 +1,125 @@
+.hero-logo{
+    max-width: 650px;
+}
+.max-w-800px{
+    max-width: 800px;
+}
+.icon-15px{
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+}
+.icon-30px{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+.featured-artists .nav-tabs{
+    border: none;
+}
+.featured-artists .nav-tabs .nav-link{
+    border: none;
+    text-transform: uppercase;
+    text-wrap: nowrap;
+    opacity: 0.5;
+}
+.featured-artists .nav-tabs .nav-item{
+    margin: 12px 0;
+}
+.featured-artists .nav-tabs .nav-link.active{
+    opacity: 1;
+}
+.featured-artists .nav-tabs .nav-link img{
+    max-width: 120px;
+}
+.right-leaned{
+    transform:skew(-4deg, 4deg);
+}
+.left-leaned{
+    transform:skew(4deg, -4deg);
+}
+.object-top{
+    object-position: top;
+}
+.object-bottom{
+    object-position: bottom;
+}
+.object-center{
+    object-position:center;
+}
+.w-90{
+    width: 90%;
+}
+.w-80{
+    width: 80%;
+}
+.featured-artists .card-img-top{
+    max-height: 200px;
+    object-fit: cover;
+    filter: grayscale(60);
+}
+.tape{
+    max-width: 130px;
+}
+
+.slider-arrow{
+    width: 80px;
+    cursor: pointer;
+}
+.featured-card-paragraph{
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.testimonial-img-box{
+    width: 120px;
+    height: 150px;
+}
+.pin-img{
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+}
+.contactus-input{
+    background-color: rgba(243, 243, 243, 1);
+    border:1px solid rgba(233, 233, 233, 0.93) ;
+}
+.resize-none{
+    resize: none;
+}
+.contact-us .card-img-top{
+    max-height: 250px;
+    object-fit: cover;
+    filter: grayscale(60);
+}
+.footer-logo{
+    width: 180px;
+}
+.home-page section{
+    padding: 90px 0;
+}
+.hero{
+    clip-path: polygon(0 0,100% 0,100% 93%,0 100%);
+}
+.testimonials{
+    clip-path: polygon(0 7%,100% 0,100% 100%,0 93%);
+}
+.home-footer{
+    clip-path: polygon(0 0,100% 7%,100% 100%,0 100%);
+    padding-top: 90px;
+}
+
+
+@media screen and (max-width:992px) {
+    .slider-arrow{
+        width: 48px;
+    }
+}
+
+
+
+@media screen and (max-width:576px) {
+    .text-lsm-14{
+        font-size: 14px;
+    }
+}
