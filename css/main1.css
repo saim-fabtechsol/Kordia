@@ -95,8 +95,16 @@
 .footer-logo{
     width: 180px;
 }
-.home-page section{
-    padding: 90px 0;
+
+.pt-90{
+    padding-top: 90px;
+}
+.pb-90{
+    padding-bottom: 90px;
+}
+.py-90{
+    padding-top: 90px;
+    padding-bottom: 90px;
 }
 .hero{
     clip-path: polygon(0 0,100% 0,100% 93%,0 100%);
@@ -104,9 +112,13 @@
 .testimonials{
     clip-path: polygon(0 7%,100% 0,100% 100%,0 93%);
 }
-.home-footer{
+.home-page .home-footer{
     clip-path: polygon(0 0,100% 7%,100% 100%,0 100%);
-    padding-top: 90px;
+}
+.about-page-images-box{
+    max-width: 500px;
+    max-height: 300px;
+    box-shadow: 8px 8px 8px 0px rgba(22, 22, 22, 0.5);
 }
 
 
