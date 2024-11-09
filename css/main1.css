@@ -9,6 +9,12 @@
     height: 15px;
     object-fit: contain;
 }
+.img-gray{
+    filter: grayscale(60);
+}
+.text-12{
+    font-size: 12px !important;
+}
 .icon-30px{
     width: 30px;
     height: 30px;
@@ -106,25 +112,55 @@
     padding-top: 90px;
     padding-bottom: 90px;
 }
-.hero{
-    clip-path: polygon(0 0,100% 0,100% 93%,0 100%);
-}
-.testimonials{
-    clip-path: polygon(0 7%,100% 0,100% 100%,0 93%);
-}
-.home-page .home-footer{
-    clip-path: polygon(0 0,100% 7%,100% 100%,0 100%);
-}
+
 .about-page-images-box{
     max-width: 500px;
     max-height: 300px;
     box-shadow: 8px 8px 8px 0px rgba(22, 22, 22, 0.5);
 }
+.why-kordia-logo{
+    max-width: 500px;
+    max-width: 500px;
+    object-fit: contain;
+}
+.why-kordia{
+    background-image: url(../images/why-kordia-bg.png);
+    background-size: cover;
+}
 
-
+.clip-btm-rt-box{
+    margin-top: -1px;
+    height: 100px;
+    background-color: var(--main-blue);
+    clip-path: polygon(0 0,100% 0,0 100%);
+}
+.clip-top-lft-box{
+    margin-bottom: -1px;
+    height: 100px;
+    background-color: var(--main-blue);
+    clip-path: polygon(0 100%,100% 0,100% 100%);
+}
+.clip-top-rt-box{
+    margin-bottom: -1px;
+    height: 100px;
+    background-color: var(--main-blue);
+    clip-path: polygon(0 0,0 100%,100% 100%);
+}
+.clip-btm-lft-box{
+    margin-top: -1px;
+    height: 100px;
+    background-color: var(--main-blue);
+    clip-path: polygon(0 0,100% 0,100% 100%);
+}
+.accordian-content{
+    display: none;
+}
 @media screen and (max-width:992px) {
     .slider-arrow{
         width: 48px;
+    }
+    .why-kordia{
+        background: none;
     }
 }
 
@@ -132,6 +168,9 @@
 
 @media screen and (max-width:576px) {
     .text-lsm-14{
-        font-size: 14px;
+        font-size: 14px !important;
+    }
+    .text-lsm-16{
+        font-size: 16px !important;
     }
 }

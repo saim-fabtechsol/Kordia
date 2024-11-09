@@ -64,3 +64,11 @@ $('.testimonial-slider').slick({
     nextArrow: '.testimonial-slider-next',
     autoplay: true,
 });
+
+$(document).ready(function () {
+    $(".accordian-btn").click(function () {
+        $(".accordian-content").not($(this).closest('div').find('.accordian-content')).slideUp();
+        
+        $(this).closest('div').find('.accordian-content').slideToggle();
+    });
+});

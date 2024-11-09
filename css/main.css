@@ -95,7 +95,9 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 }
-
+.pointer{
+    cursor: pointer;
+}
 .my-shadow {
     box-shadow: 0px 0px 20px 0px rgba(154, 154, 154, 0.2);
 }
@@ -108,6 +110,7 @@ body {
     --main-blue:rgba(0, 58, 94, 1);
     --main-orange: rgba(255, 151, 0, 1);
     --navbar-bg:rgba(0, 58, 94, 0.9);
+    --bg-feature-card:rgba(0, 106, 160, 1);
 }
 .navbar-bg{
     background-color: var(--navbar-bg);
@@ -120,6 +123,9 @@ body {
 }
 .bg-main-blue{
     background-color: var(--main-blue);
+}
+.bg-feature-card{
+    background-color: var(--bg-feature-card);
 }
 .text-main-blue{
     color: var(--main-blue);
