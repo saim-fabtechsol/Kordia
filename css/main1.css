@@ -323,6 +323,7 @@
 
 .template-right {
   width: calc(100% - 280px);
+  background-color: #F9F9F9;
 }
 
 .side-bar-top {
@@ -361,6 +362,22 @@
 
 .side-bar-top::-webkit-scrollbar{
   width: 0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--main-blue);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--main-orange);
+  border-radius: 8px;
+  border: 1px solid var(--main-blue);
 }
 
 @media screen and (max-width:1200px) {
