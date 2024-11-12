@@ -1,176 +1,263 @@
-.hero-logo{
-    max-width: 650px;
+.hero-logo {
+  max-width: 650px;
 }
-.max-w-800px{
-    max-width: 800px;
+.max-w-800px {
+  max-width: 800px;
 }
-.icon-15px{
-    width: 15px;
-    height: 15px;
-    object-fit: contain;
-}
-.img-gray{
-    filter: grayscale(60);
-}
-.text-12{
-    font-size: 12px !important;
-}
-.icon-30px{
-    width: 30px;
-    height: 30px;
-    object-fit: contain;
-}
-.featured-artists .nav-tabs{
-    border: none;
-}
-.featured-artists .nav-tabs .nav-link{
-    border: none;
-    text-transform: uppercase;
-    text-wrap: nowrap;
-    opacity: 0.5;
-}
-.featured-artists .nav-tabs .nav-item{
-    margin: 12px 0;
-}
-.featured-artists .nav-tabs .nav-link.active{
-    opacity: 1;
-}
-.featured-artists .nav-tabs .nav-link img{
-    max-width: 120px;
-}
-.right-leaned{
-    transform:skew(-4deg, 4deg);
-}
-.left-leaned{
-    transform:skew(4deg, -4deg);
-}
-.object-top{
-    object-position: top;
-}
-.object-bottom{
-    object-position: bottom;
-}
-.object-center{
-    object-position:center;
-}
-.w-90{
-    width: 90%;
-}
-.w-80{
-    width: 80%;
-}
-.featured-artists .card-img-top{
-    max-height: 200px;
-    object-fit: cover;
-    filter: grayscale(60);
-}
-.tape{
-    max-width: 130px;
+.img-80px {
+  width: 80px;
+  height: 80px;
 }
 
-.slider-arrow{
-    width: 80px;
-    cursor: pointer;
+.img-60px {
+  width: 60px;
+  height: 60px;
 }
-.featured-card-paragraph{
-    max-width: 300px;
-    margin-left: auto;
-    margin-right: auto;
+.img-40px {
+  width: 40px;
+  height: 40px;
 }
-.testimonial-img-box{
-    width: 120px;
-    height: 150px;
+.icon-40px {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
 }
-.pin-img{
-    height: 40px;
-    width: 40px;
-    object-fit: contain;
+.icon-15px {
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
 }
-.contactus-input{
-    background-color: rgba(243, 243, 243, 1);
-    border:1px solid rgba(233, 233, 233, 0.93) ;
+.icon-20px {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
 }
-.resize-none{
-    resize: none;
+.img-gray {
+  filter: grayscale(60);
 }
-.contact-us .card-img-top{
-    max-height: 250px;
-    object-fit: cover;
-    filter: grayscale(60);
+.text-12 {
+  font-size: 12px !important;
 }
-.footer-logo{
-    width: 180px;
+.icon-30px {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
 }
-
-.pt-90{
-    padding-top: 90px;
+.featured-artists .nav-tabs {
+  border: none;
 }
-.pb-90{
-    padding-bottom: 90px;
+.featured-artists .nav-tabs .nav-link {
+  border: none;
+  text-transform: uppercase;
+  text-wrap: nowrap;
+  opacity: 0.5;
 }
-.py-90{
-    padding-top: 90px;
-    padding-bottom: 90px;
+.featured-artists .nav-tabs .nav-item {
+  margin: 12px 0;
 }
-
-.about-page-images-box{
-    max-width: 500px;
-    max-height: 300px;
-    box-shadow: 8px 8px 8px 0px rgba(22, 22, 22, 0.5);
+.featured-artists .nav-tabs .nav-link.active {
+  opacity: 1;
 }
-.why-kordia-logo{
-    max-width: 500px;
-    max-width: 500px;
-    object-fit: contain;
+.featured-artists .nav-tabs .nav-link img {
+  max-width: 120px;
 }
-.why-kordia{
-    background-image: url(../images/why-kordia-bg.png);
-    background-size: cover;
+.right-leaned {
+  transform: skew(-4deg, 4deg);
 }
-
-.clip-btm-rt-box{
-    margin-top: -1px;
-    height: 100px;
-    background-color: var(--main-blue);
-    clip-path: polygon(0 0,100% 0,0 100%);
+.left-leaned {
+  transform: skew(4deg, -4deg);
 }
-.clip-top-lft-box{
-    margin-bottom: -1px;
-    height: 100px;
-    background-color: var(--main-blue);
-    clip-path: polygon(0 100%,100% 0,100% 100%);
+.object-top {
+  object-position: top;
 }
-.clip-top-rt-box{
-    margin-bottom: -1px;
-    height: 100px;
-    background-color: var(--main-blue);
-    clip-path: polygon(0 0,0 100%,100% 100%);
+.object-bottom {
+  object-position: bottom;
 }
-.clip-btm-lft-box{
-    margin-top: -1px;
-    height: 100px;
-    background-color: var(--main-blue);
-    clip-path: polygon(0 0,100% 0,100% 100%);
+.object-center {
+  object-position: center;
 }
-.accordian-content{
-    display: none;
+.w-90 {
+  width: 90%;
 }
-@media screen and (max-width:992px) {
-    .slider-arrow{
-        width: 48px;
-    }
-    .why-kordia{
-        background: none;
-    }
+.w-80 {
+  width: 80%;
+}
+.featured-artists .card-img-top {
+  max-height: 200px;
+  object-fit: cover;
+  filter: grayscale(60);
+}
+.tape {
+  max-width: 130px;
 }
 
+.slider-arrow {
+  width: 80px;
+  cursor: pointer;
+}
+.featured-card-paragraph {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.testimonial-img-box {
+  width: 120px;
+  height: 150px;
+}
+.pin-img {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+}
+.contactus-input {
+  background-color: var(--bg-gray);
+  border: 1px solid rgba(233, 233, 233, 0.93);
+}
+.resize-none {
+  resize: none;
+}
+.contact-us .card-img-top {
+  max-height: 250px;
+  object-fit: cover;
+  filter: grayscale(60);
+}
+.footer-logo {
+  width: 180px;
+}
 
+.pt-90 {
+  padding-top: 90px;
+}
+.pb-90 {
+  padding-bottom: 90px;
+}
+.py-90 {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
 
-@media screen and (max-width:576px) {
-    .text-lsm-14{
-        font-size: 14px !important;
-    }
-    .text-lsm-16{
-        font-size: 16px !important;
-    }
+.about-page-images-box {
+  max-width: 500px;
+  max-height: 300px;
+  box-shadow: 8px 8px 8px 0px rgba(22, 22, 22, 0.5);
+}
+.why-kordia-logo {
+  max-width: 500px;
+  max-width: 500px;
+  object-fit: contain;
+}
+.why-kordia {
+  background-image: url(../images/why-kordia-bg.png);
+  background-size: cover;
+}
+
+.clip-btm-rt-box {
+  margin-top: -1px;
+  height: 100px;
+  background-color: var(--main-blue);
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+.clip-top-lft-box {
+  margin-bottom: -1px;
+  height: 100px;
+  background-color: var(--main-blue);
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+}
+.clip-top-rt-box {
+  margin-bottom: -1px;
+  height: 100px;
+  background-color: var(--main-blue);
+  clip-path: polygon(0 0, 0 100%, 100% 100%);
+}
+.clip-btm-lft-box {
+  margin-top: -1px;
+  height: 100px;
+  background-color: var(--main-blue);
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+.accordian-content {
+  display: none;
+}
+.accordian-icon.active {
+  transform: rotate(-90deg);
+  transition: 0.5s;
+}
+.form-filter-btn {
+  color: var(--main-blue);
+  cursor: pointer;
+  border: 2px solid var(--main-blue);
+  text-align: center;
+}
+.form-filter-btn.active {
+  background-color: var(--main-blue);
+  color: #fff;
+}
+.comments-modal {
+  max-height: 80dvh;
+}
+.comments-modal-body {
+  max-height: calc(100% - 90px);
+}
+.contact-info-card {
+  min-height: 600px;
+  background-image: url(../images/conatct-info-card-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+/* ----------------------------- contact Us Radio ----------------------------- */
+
+.radio-wrapper-9 input[type="radio"] {
+  display: none;
+  appearance: none;
+}
+.radio-wrapper-9 input[type="radio"] + label:before {
+  content: "";
+  background: #fff;
+  border-radius: 100%;
+  border: 1px solid #b4b4b4;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  margin-right: 0.6em;
+  vertical-align: middle;
+  cursor: pointer;
+  text-align: center;
+  transition: all 250ms ease;
+}
+.radio-wrapper-9 input[type="radio"]:checked + label:before {
+  background-image: url(../images/check-circle-blue.png);
+  border:none;
+  background-size: cover;
+  background-position: center;
+}
+.radio-wrapper-9 input[type="radio"]:focus + label:before {
+  outline: none;
+}
+.radio-wrapper-9 input[type="radio"] + label:empty:before {
+  margin-right: 0;
+}
+
+/* ----------------------------- contact Us Radio ----------------------------- */
+
+@media screen and (max-width: 992px) {
+  .slider-arrow {
+    width: 48px;
+  }
+  .why-kordia {
+    background: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .text-lsm-14 {
+    font-size: 14px !important;
+  }
+  .text-lsm-16 {
+    font-size: 16px !important;
+  }
+  .text-lsm-18 {
+    font-size: 18px !important;
+  }
 }

@@ -68,7 +68,10 @@ $('.testimonial-slider').slick({
 $(document).ready(function () {
     $(".accordian-btn").click(function () {
         $(".accordian-content").not($(this).closest('div').find('.accordian-content')).slideUp();
-        
+        $(".accordian-btn .accordian-icon").not($(this).find('.accordian-icon')).removeClass("active");
+
         $(this).closest('div').find('.accordian-content').slideToggle();
+
+        $(this).find('.accordian-icon').toggleClass('active');
     });
 });
