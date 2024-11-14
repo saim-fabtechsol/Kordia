@@ -148,7 +148,47 @@
                 </div>
                 <div class="my-4 bg-white rounded-4 my-shadow py-4 px-4">
                     <h3 class="fw-semibold">Revenue Details</h3>
-                    <canvas id="db-revenue-graph"></canvas>
+                    <form action="">
+                        <div class="d-flex flex-wrap justify-content-end align-items-center">
+                            <div class="my-2">
+                                <select class="form-select focus-none" name="Month" id="Month">
+                                    <option class="d-none" selected disabled value="Month">Month</option>
+                                    <option value="January">January</option>
+                                    <option value="February">February</option>
+                                    <option value="March">March</option>
+                                    <option value="April">April</option>
+                                    <option value="May">May</option>
+                                    <option value="June">June</option>
+                                    <option value="July">July</option>
+                                    <option value="August">August</option>
+                                    <option value="September">September</option>
+                                    <option value="October">October</option>
+                                    <option value="November">November</option>
+                                    <option value="December">December</option>
+                                </select>
+                            </div>
+                            <div class="ms-3 my-2">
+                                <select class="form-select focus-none" name="Year" id="Year">
+                                    <option class="d-none" selected disabled value="Year">Year</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025" disabled>2025</option>
+                                    <option value="2026" disabled>2026</option>
+                                    <option value="2027" disabled>2027</option>
+                                    <option value="2028" disabled>2028</option>
+                                    <option value="2029" disabled>2029</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="overflow-auto py-2">
+                        <canvas class="db-revenue-graph w-100" id="db-revenue-graph"></canvas>
+                    </div>
                 </div>
                </div>
             </div>

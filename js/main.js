@@ -88,46 +88,68 @@ function displayToggle() {
 }
 
 const ctx2 = document.getElementById("db-revenue-graph").getContext("2d");
-const mainorange = 'rgba(255, 151, 0, 1)'
+const mainorange = 'rgba(255, 151, 0, 1)';
 const mainblue = 'rgba(0, 58, 94, 1)';
 
 const gradient = ctx2.createLinearGradient(0, 0, 0, 800);
 gradient.addColorStop(0, "rgba(237, 197, 138, .6)");
 gradient.addColorStop(1, "rgba(255, 255, 255, 1)");
 
+// Set canvas width and height to 100%
+const canvas = document.getElementById("db-revenue-graph");
+canvas.style.width = '100%';
+//canvas.style.height = '100%';
+
 new Chart(ctx2, {
     type: "line",
     data: {
-        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+        labels: ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"],
         datasets: [
             {
                 label: "Revenue",
-                data: [12, 19, 3, 5, 2, 3],
+                data: [20, 40, 25, 50, 30, 85, 45, 65, 40, 60, 75, 60],
                 borderWidth: 1,
-                borderColor:mainorange,
+                borderColor: mainorange,
                 fill: true,
-                tension: 0.1,
                 backgroundColor: gradient,
-                pointRadius:2,
+                pointRadius: 4,
+                pointBackgroundColor: mainblue,
+                pointBorderColor: mainblue,
             },
         ],
     },
     options: {
+        responsive: false,
+        maintainAspectRatio: false,
         plugins: {
             legend: {
-                display: false  // Disable the legend
-            }
-        },
-        scales: {
-            y: {
-                beginAtZero: true,
+                display: false,
             },
         },
-        elements:{
-            point:{
-                backgroundColor: mainblue,
-            }
+        scales: {
+            x: {
+                ticks: {
+                    display: true,
+                },
+                border: {
+                    display: true,
+                },
+                grid: {
+                    display: false,
+                },
+            },
+            y: {
+                beginAtZero: true,
+                border: {
+                    display: false,
+                },
+                ticks: {
+                    stepSize: 20,
+                    callback: function (value, index, ticks) {
+                        return '$' + value + ' k';
+                    },
+                },
+            },
         },
     },
 });
-

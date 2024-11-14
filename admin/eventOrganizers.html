@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/main1.css">
+    <title>Event Organizers</title>
+</head>
+
+<body class="home-page">
+    <header class="bg-main-blue p-3">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="me-3">
+                <a href="../index.html">
+                    <img class="template-logo w-100" src="../images/Logo.png" alt="images">
+                </a>
+            </div>
+            <div class="d-flex align-items-center">
+                <a class="me-2 position-relative" href="#">
+                    <img class="icon-20px" src="../images/bell-icon.png" alt="img">
+                    <div class="position-absolute top-0 end-0 translate-middle">
+                        <span class="text-12 text-white bg-danger rounded-circle p-1">6</span>
+                    </div>
+                </a>
+                <a class="text-decoration-none" href="#">
+                    <div class="d-flex align-items-center">
+                        <img class="template-profile-img rounded-circle me-2" src="../images/forum-profile-2.png"
+                            alt="img">
+                        <p class="mb-0 fs-5 fw-bold text-white d-none d-sm-block">Moni Roy</p>
+                    </div>
+                </a>
+                <div class="d-xl-none pointer" onclick="displayToggle()">
+                    <div class="ms-3 text-white fs-1 d-flex align-items-center">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="template-body position-relative">
+        <div class="d-flex h-100">
+            <div class="side-bar d-xl-block border-end border-3 border-blue" id="side-bar">
+                <div class="side-bar-top overflow-y-auto">
+                    <div class="d-flex flex-column">
+                        <a href="#" class="side-bar-links">
+                            <img class="icon-20px me-3" src="../images/dashboard-blue.png" alt="">
+                            <span>Dashboard</span>
+                        </a>
+                        <div class="side-bar-dropdown-btn">
+                            <div class="dropdown w-100">
+                                <div type="button" class="" data-bs-toggle="dropdown">
+                                    <div class="d-flex align-items-center text-main-orange">
+                                        <img class="icon-20px mx-3" src="../images/user-orange.png" alt="">
+                                        <span class="me-2">User Management</span>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <ul class="dropdown-menu pb-0 pt-3 show">
+                                    <li><a class="side-bar-links" href="#">Musicians</a></li>
+                                    <li><a class="side-bar-links active" href="#">Event Organizers</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="#" class="side-bar-links">
+                            <img class="icon-20px me-3" src="../images/event-blue.png" alt="">
+                            <span>Event Management</span>
+                        </a>
+                        <a href="#" class="side-bar-links">
+                            <img class="icon-20px me-3" src="../images/subscription-blue.png" alt="">
+                            <span>Subscription Management</span>
+                        </a>
+                        <a href="#" class="side-bar-links">
+                            <img class="icon-20px me-3" src="../images/manage-plans-blue.png" alt="">
+                            <span>Manage Subscriptions Plans</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center mt-2 mb-3">
+                    <a class="fs-5 py-3 px-5 text-decoration-none border border-3 border-orange text-main-orange rounded"
+                        href="#">Logout</a>
+                </div>
+            </div>
+            <div class="template-right h-100 py-2 container-fluid">
+                <div class="overflow-auto h-100 p-3">
+                    <h2 class="text-main-orange text-uppercase fs-1 fw-semibold">Event Organizers
+                    </h2>
+                    <div class="row align-items-center">
+                        <div class="col-md-6 my-2">
+                            <div class="d-flex align-items-center position-relative">
+                                <div class="pointer me-2 fs-5" onclick="togglefilterform()">
+                                    <i class="fa-solid fa-bars mx-2"></i>
+                                </div>
+                                <form class="w-100" action="">
+                                    <div class="d-flex align-items-center contactus-input bg-white p-2 rounded-pill">
+                                        <input class="w-100 bg-transparent border-0 focus-none" type="search"
+                                            name="search" id="search" placeholder="search">
+                                        <label for="search"><i
+                                                class="fa-solid fa-magnifying-glass text-secondary mx-2"></i></label>
+                                    </div>
+                                </form>
+                                <div class="search-filter-form position-absolute start-0 top-100"
+                                    id="search-filter-form">
+                                    <div class="bg-white my-shadow border rounded-4 p-3">
+                                        <form action="">
+                                            <div class="border-bottom pb-3">
+                                                <div>
+                                                    <input class="d-none m-flter-input" type="checkbox"
+                                                        name="filter-select-all" id="filter-select-all">
+                                                    <label class="filter-btns pointer" for="filter-select-all">Select
+                                                        All</label>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center my-3">
+                                                <div class="me-4">
+                                                    <input class="d-none m-flter-input" type="checkbox" name="Active"
+                                                        id="Active">
+                                                    <label class="filter-btns pointer" for="Active">Active</label>
+                                                </div>
+                                                <div>
+                                                    <input class="d-none m-flter-input" type="checkbox" name="block"
+                                                        id="block">
+                                                    <label class="filter-btns pointer" for="block">Block</label>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center my-3">
+                                                <div class="me-4">
+                                                    <input class="d-none m-flter-input" type="checkbox" name="Male"
+                                                        id="Male">
+                                                    <label class="filter-btns pointer" for="Male">Male</label>
+                                                </div>
+                                                <div>
+                                                    <input class="d-none m-flter-input" type="checkbox" name="female"
+                                                        id="female">
+                                                    <label class="filter-btns pointer" for="female">Female</label>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-center mt-5">
+                                                <input
+                                                    class="btn-orange-solid border-0 px-5 py-2 fs-5 text-white rounded-3"
+                                                    type="submit" value="Apply Now">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex flex-wrap align-items-center justify-content-end">
+                                <div class="my-2">
+                                    <select class="form-select focus-none" name="sortbt" id="sortby">
+                                        <option class="d-none" value="Sortby" selected disabled>Sort By</option>
+                                        <option value="newestfirst">Newest first</option>
+                                        <option value="oldestfirst">Oldest first</option>
+                                    </select>
+                                </div>
+                                <div class="ms-4 my-2">
+                                    <select class="form-select focus-none" name="filterby" id="filterby">
+                                        <option class="d-none" value="filterby" selected disabled>Filter By</option>
+                                        <option value="option1">Option 1</option>
+                                        <option value="option2">Option 2</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5 musician-table table-responsive">
+                        <table class="table table-borderless">
+                            <thead>
+                                <tr>
+                                    <th>Image</th>
+                                    <th>Name</th>
+                                    <th>Registration Date</th>
+                                    <th>Location</th>
+                                    <th>Subscription Plan</th>
+                                    <th class="text-center">Status</th>
+                                    <th>More</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img class="img-50px rounded-circle object-fit-cover"
+                                            src="../images/eventorganizer1.png" alt="img">
+                                    </td>
+                                    <td>
+                                        <p class="mb-0">Anika Korsgaard</p>
+                                    </td>
+                                    <td>
+                                        <p class="mb-0">12/12/24</p>
+                                    </td>
+                                    <td>
+                                        <p class="mb-0">Lisbon</p>
+                                    </td>
+                                    <td>
+                                        <p class="mb-0">Basic</p>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex justify-content-center">
+                                            <p class="mb-0 status active d-inline rounded-pill py-2 px-3">
+                                                Active
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td class="position-relative">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <div class="more-option-btn pointer py-2 px-3 rounded-3 bg-light d-inline">
+                                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="more-options border bg-white position-absolute top-0 end-100 rounded-4 my-shadow p-2">
+                                            <a class="text-decoration-none text-main-blue" href="#">
+                                                <div class="d-flex my-3 justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <img class="icon-20px me-2"
+                                                            src="../images/view-profile-icon.png" alt="img">
+                                                        <span>
+                                                            View Profile
+                                                        </span>
+                                                    </div>
+                                                    <i class="fa fa-chevron-right ms-3" aria-hidden="true"></i>
+                                                </div>
+                                            </a>
+                                            <div class="d-flex pointer my-3 justify-content-between align-items-center">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="icon-20px me-2" src="../images/block-profile-icon.png"
+                                                        alt="img">
+                                                    <span>
+                                                        Block Profile
+                                                    </span>
+                                                </div>
+                                                <i class="fa fa-chevron-right ms-3" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="d-flex pointer my-3 justify-content-between align-items-center">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="icon-20px me-2" src="../images/unblock-profile-icon.png"
+                                                        alt="img">
+                                                    <span>
+                                                        Unblock Profile
+                                                    </span>
+                                                </div>
+                                                <i class="fa fa-chevron-right ms-3" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img class="img-50px rounded-circle object-fit-cover"
+                                            src="../images/eventorganizer2.png" alt="img">
+                                    </td>
+                                    <td>
+                                        <p class="mb-0">Kaiya Bator</p>
+                                    </td>
+                                    <td>
+                                        <p class="mb-0">12/12/24</p>
+                                    </td>
+                                    <td>
+                                        <p class="mb-0">Lisbon</p>
+                                    </td>
+                                    <td>
+                                        <p class="mb-0">Standard</p>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex justify-content-center">
+                                            <p class="mb-0 status active d-inline rounded-pill py-2 px-3">
+                                                Active
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td class="position-relative">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <div class="more-option-btn pointer py-2 px-3 rounded-3 bg-light d-inline">
+                                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="more-options border bg-white position-absolute top-0 end-100 rounded-4 my-shadow p-2">
+                                            <a class="text-decoration-none text-main-blue" href="#">
+                                                <div class="d-flex my-3 justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <img class="icon-20px me-2"
+                                                            src="../images/view-profile-icon.png" alt="img">
+                                                        <span>
+                                                            View Profile
+                                                        </span>
+                                                    </div>
+                                                    <i class="fa fa-chevron-right ms-3" aria-hidden="true"></i>
+                                                </div>
+                                            </a>
+                                            <div class="d-flex pointer my-3 justify-content-between align-items-center">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="icon-20px me-2" src="../images/block-profile-icon.png"
+                                                        alt="img">
+                                                    <span>
+                                                        Block Profile
+                                                    </span>
+                                                </div>
+                                                <i class="fa fa-chevron-right ms-3" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="d-flex pointer my-3 justify-content-between align-items-center">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="icon-20px me-2" src="../images/unblock-profile-icon.png"
+                                                        alt="img">
+                                                    <span>
+                                                        Unblock Profile
+                                                    </span>
+                                                </div>
+                                                <i class="fa fa-chevron-right ms-3" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img class="img-50px rounded-circle object-fit-cover"
+                                            src="../images/eventorganizer3.png" alt="img">
+                                    </td>
+                                    <td>
+                                        <p class="mb-0">Kierra Dokidis</p>
+                                    </td>
+                                    <td>
+                                        <p class="mb-0">12/12/24</p>
+                                    </td>
+                                    <td>
+                                        <p class="mb-0">Lisbon</p>
+                                    </td>
+                                    <td>
+                                        <p class="mb-0">Premium</p>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex justify-content-center">
+                                            <p class="mb-0 status blocked d-inline rounded-pill py-2 px-3">
+                                                Block
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td class="position-relative">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <div class="more-option-btn pointer py-2 px-3 rounded-3 bg-light d-inline">
+                                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="more-options border bg-white position-absolute top-0 end-100 rounded-4 my-shadow p-2">
+                                            <a class="text-decoration-none text-main-blue" href="#">
+                                                <div class="d-flex my-3 justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <img class="icon-20px me-2"
+                                                            src="../images/view-profile-icon.png" alt="img">
+                                                        <span>
+                                                            View Profile
+                                                        </span>
+                                                    </div>
+                                                    <i class="fa fa-chevron-right ms-3" aria-hidden="true"></i>
+                                                </div>
+                                            </a>
+                                            <div class="d-flex pointer my-3 justify-content-between align-items-center">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="icon-20px me-2" src="../images/block-profile-icon.png"
+                                                        alt="img">
+                                                    <span>
+                                                        Block Profile
+                                                    </span>
+                                                </div>
+                                                <i class="fa fa-chevron-right ms-3" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="d-flex pointer my-3 justify-content-between align-items-center">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="icon-20px me-2" src="../images/unblock-profile-icon.png"
+                                                        alt="img">
+                                                    <span>
+                                                        Unblock Profile
+                                                    </span>
+                                                </div>
+                                                <i class="fa fa-chevron-right ms-3" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img class="img-50px rounded-circle object-fit-cover"
+                                            src="../images/eventorganizer4.png" alt="img">
+                                    </td>
+                                    <td>
+                                        <p class="mb-0">Anika Geidt</p>
+                                    </td>
+                                    <td>
+                                        <p class="mb-0">12/12/24</p>
+                                    </td>
+                                    <td>
+                                        <p class="mb-0">Lisbon</p>
+                                    </td>
+                                    <td>
+                                        <p class="mb-0">Basic</p>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex justify-content-center">
+                                            <p class="mb-0 status active d-inline rounded-pill py-2 px-3">
+                                                Active
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td class="position-relative">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <div class="more-option-btn pointer py-2 px-3 rounded-3 bg-light d-inline">
+                                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="more-options border bg-white position-absolute top-0 end-100 rounded-4 my-shadow p-2">
+                                            <a class="text-decoration-none text-main-blue" href="#">
+                                                <div class="d-flex my-3 justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <img class="icon-20px me-2"
+                                                            src="../images/view-profile-icon.png" alt="img">
+                                                        <span>
+                                                            View Profile
+                                                        </span>
+                                                    </div>
+                                                    <i class="fa fa-chevron-right ms-3" aria-hidden="true"></i>
+                                                </div>
+                                            </a>
+                                            <div class="d-flex pointer my-3 justify-content-between align-items-center">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="icon-20px me-2" src="../images/block-profile-icon.png"
+                                                        alt="img">
+                                                    <span>
+                                                        Block Profile
+                                                    </span>
+                                                </div>
+                                                <i class="fa fa-chevron-right ms-3" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="d-flex pointer my-3 justify-content-between align-items-center">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="icon-20px me-2" src="../images/unblock-profile-icon.png"
+                                                        alt="img">
+                                                    <span>
+                                                        Unblock Profile
+                                                    </span>
+                                                </div>
+                                                <i class="fa fa-chevron-right ms-3" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img class="img-50px rounded-circle object-fit-cover"
+                                            src="../images/eventorganizer5.png" alt="img">
+                                    </td>
+                                    <td>
+                                        <p class="mb-0">Kadin Culhane</p>
+                                    </td>
+                                    <td>
+                                        <p class="mb-0">12/12/24</p>
+                                    </td>
+                                    <td>
+                                        <p class="mb-0">Lisbon</p>
+                                    </td>
+                                    <td>
+                                        <p class="mb-0">Standard</p>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex justify-content-center">
+                                            <p class="mb-0 status active d-inline rounded-pill py-2 px-3">
+                                                Active
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td class="position-relative">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <div class="more-option-btn pointer py-2 px-3 rounded-3 bg-light d-inline">
+                                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="more-options border bg-white position-absolute top-0 end-100 rounded-4 my-shadow p-2">
+                                            <a class="text-decoration-none text-main-blue" href="#">
+                                                <div class="d-flex my-3 justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <img class="icon-20px me-2"
+                                                            src="../images/view-profile-icon.png" alt="img">
+                                                        <span>
+                                                            View Profile
+                                                        </span>
+                                                    </div>
+                                                    <i class="fa fa-chevron-right ms-3" aria-hidden="true"></i>
+                                                </div>
+                                            </a>
+                                            <div class="d-flex pointer my-3 justify-content-between align-items-center">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="icon-20px me-2" src="../images/block-profile-icon.png"
+                                                        alt="img">
+                                                    <span>
+                                                        Block Profile
+                                                    </span>
+                                                </div>
+                                                <i class="fa fa-chevron-right ms-3" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="d-flex pointer my-3 justify-content-between align-items-center">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="icon-20px me-2" src="../images/unblock-profile-icon.png"
+                                                        alt="img">
+                                                    <span>
+                                                        Unblock Profile
+                                                    </span>
+                                                </div>
+                                                <i class="fa fa-chevron-right ms-3" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img class="img-50px rounded-circle object-fit-cover"
+                                            src="../images/eventorganizer6.png" alt="img">
+                                    </td>
+                                    <td>
+                                        <p class="mb-0">Emerson Bergson</p>
+                                    </td>
+                                    <td>
+                                        <p class="mb-0">12/12/24</p>
+                                    </td>
+                                    <td>
+                                        <p class="mb-0">Lisbon</p>
+                                    </td>
+                                    <td>
+                                        <p class="mb-0">Premium</p>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex justify-content-center">
+                                            <p class="mb-0 status active d-inline rounded-pill py-2 px-3">
+                                                Active
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td class="position-relative">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <div class="more-option-btn pointer py-2 px-3 rounded-3 bg-light d-inline">
+                                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="more-options border bg-white position-absolute top-0 end-100 rounded-4 my-shadow p-2">
+                                            <a class="text-decoration-none text-main-blue" href="#">
+                                                <div class="d-flex my-3 justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <img class="icon-20px me-2"
+                                                            src="../images/view-profile-icon.png" alt="img">
+                                                        <span>
+                                                            View Profile
+                                                        </span>
+                                                    </div>
+                                                    <i class="fa fa-chevron-right ms-3" aria-hidden="true"></i>
+                                                </div>
+                                            </a>
+                                            <div class="d-flex pointer my-3 justify-content-between align-items-center">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="icon-20px me-2" src="../images/block-profile-icon.png"
+                                                        alt="img">
+                                                    <span>
+                                                        Block Profile
+                                                    </span>
+                                                </div>
+                                                <i class="fa fa-chevron-right ms-3" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="d-flex pointer my-3 justify-content-between align-items-center">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="icon-20px me-2" src="../images/unblock-profile-icon.png"
+                                                        alt="img">
+                                                    <span>
+                                                        Unblock Profile
+                                                    </span>
+                                                </div>
+                                                <i class="fa fa-chevron-right ms-3" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img class="img-50px rounded-circle object-fit-cover"
+                                            src="../images/eventorganizer7.png" alt="img">
+                                    </td>
+                                    <td>
+                                        <p class="mb-0">Justin Dokidis</p>
+                                    </td>
+                                    <td>
+                                        <p class="mb-0">12/12/24</p>
+                                    </td>
+                                    <td>
+                                        <p class="mb-0">Lisbon</p>
+                                    </td>
+                                    <td>
+                                        <p class="mb-0">Basic</p>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex justify-content-center">
+                                            <p class="mb-0 status active d-inline rounded-pill py-2 px-3">
+                                                Active
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td class="position-relative">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <div class="more-option-btn pointer py-2 px-3 rounded-3 bg-light d-inline">
+                                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="more-options border bg-white position-absolute top-0 end-100 rounded-4 my-shadow p-2">
+                                            <a class="text-decoration-none text-main-blue" href="#">
+                                                <div class="d-flex my-3 justify-content-between align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <img class="icon-20px me-2"
+                                                            src="../images/view-profile-icon.png" alt="img">
+                                                        <span>
+                                                            View Profile
+                                                        </span>
+                                                    </div>
+                                                    <i class="fa fa-chevron-right ms-3" aria-hidden="true"></i>
+                                                </div>
+                                            </a>
+                                            <div class="d-flex pointer my-3 justify-content-between align-items-center">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="icon-20px me-2" src="../images/block-profile-icon.png"
+                                                        alt="img">
+                                                    <span>
+                                                        Block Profile
+                                                    </span>
+                                                </div>
+                                                <i class="fa fa-chevron-right ms-3" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="d-flex pointer my-3 justify-content-between align-items-center">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="icon-20px me-2" src="../images/unblock-profile-icon.png"
+                                                        alt="img">
+                                                    <span>
+                                                        Unblock Profile
+                                                    </span>
+                                                </div>
+                                                <i class="fa fa-chevron-right ms-3" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="musician-pagination d-flex justify-content-end mt-5">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/f9a70f49f9.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".more-option-btn").click(function (event) {
+                event.stopPropagation(); // Prevent click event from bubbling up to the document
+
+                $(".more-options").not($(this).closest("tr").find(".more-options")).hide();
+                $(this).closest("tr").find(".more-options").toggle();
+            });
+
+            $(document).click(function () {
+                $(".more-options").hide();
+            });
+
+            $(".more-options").click(function (event) {
+                event.stopPropagation();
+            });
+        });
+
+        $(document).ready(function () {
+            $("#filter-select-all").click(function () {
+                $(".m-flter-input").prop("checked", this.checked);
+            });
+
+            $(".m-flter-input").click(function () {
+                if ($(".m-flter-input:checked").length === $(".m-flter-input").length) {
+                    $("#filter-select-all").prop("checked", true);
+                } else {
+                    $("#filter-select-all").prop("checked", false);
+                }
+            });
+        });
+
+        function togglefilterform() {
+            var x = document.getElementById("search-filter-form");
+            if (x.style.display === "none" || x.style.display === "") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
