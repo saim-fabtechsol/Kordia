@@ -143,6 +143,10 @@
   margin-left: auto;
   margin-right: auto;
 }
+.card:hover{
+  transform: none;
+  transition: .5s;
+}
 
 .testimonial-img-box {
   width: 120px;

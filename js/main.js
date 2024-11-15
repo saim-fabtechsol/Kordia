@@ -6,7 +6,7 @@ $(".musician-slider").slick({
     slidesToScroll: 3,
     prevArrow: ".musician-slider-prev",
     nextArrow: ".musician-slider-next",
-    autoplay: true,
+  //  autoplay: true,
     responsive: [
         {
             breakpoint: 992,
