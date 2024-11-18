@@ -87,6 +87,11 @@ function displayToggle() {
     }
 }
 
+window.onload = function () {
+    const targetElement = document.getElementById('target');
+    targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+};
+
 const ctx2 = document.getElementById("db-revenue-graph").getContext("2d");
 const mainorange = 'rgba(255, 151, 0, 1)';
 const mainblue = 'rgba(0, 58, 94, 1)';
@@ -95,10 +100,10 @@ const gradient = ctx2.createLinearGradient(0, 0, 0, 800);
 gradient.addColorStop(0, "rgba(237, 197, 138, .6)");
 gradient.addColorStop(1, "rgba(255, 255, 255, 1)");
 
-// Set canvas width and height to 100%
-const canvas = document.getElementById("db-revenue-graph");
-canvas.style.width = '100%';
-//canvas.style.height = '100%';
+// Set mycanvas width and height to 100%
+const mycanvas = document.getElementById("db-revenue-graph");
+mycanvas.style.width = '100%';
+//mycanvas.style.height = '100%';
 
 new Chart(ctx2, {
     type: "line",
