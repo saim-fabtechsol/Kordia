@@ -70,15 +70,62 @@
                             href="#" data-bs-toggle="modal" data-bs-target="#addpost">Add Post</a>
                     </div>
                     <div class="col-md-6 my-2">
-                        <form action="">
-                            <div class="d-flex align-items-center contactus-input p-2 rounded-pill">
-                                <label for="search"><i class="fa-solid fa-bars text-secondary mx-2"></i></label>
-                                <input class="w-100 bg-transparent border-0 focus-none" type="search" name="search"
-                                    id="search" placeholder="search">
-                                <label for="search"><i
-                                        class="fa-solid fa-magnifying-glass text-secondary mx-2"></i></label>
+                        <div class="d-flex align-items-center position-relative">
+                            <div class="pointer me-2 fs-5" onclick="togglefilterform()">
+                                <i class="fa-solid fa-bars mx-2"></i>
                             </div>
-                        </form>
+                            <form class="w-100" action="">
+                                <div class="d-flex align-items-center contactus-input p-2 rounded-pill">
+                                    <input class="w-100 bg-transparent border-0 focus-none" type="search"
+                                        name="search" id="search" placeholder="search">
+                                    <label for="search"><i
+                                            class="fa-solid fa-magnifying-glass text-secondary mx-2"></i></label>
+                                </div>
+                            </form>
+                            <div class="search-filter-form position-absolute start-0 top-100" id="search-filter-form">
+                                <div class="bg-white my-shadow border rounded-4 p-3">
+                                    <form action="">
+                                        <div class="border-bottom pb-3">
+                                            <div>
+                                                <input class="d-none m-flter-input" type="checkbox"
+                                                    name="filter-select-all" id="filter-select-all">
+                                                <label class="filter-btns pointer" for="filter-select-all">Select
+                                                    All</label>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center my-3">
+                                            <div class="me-4">
+                                                <input class="d-none m-flter-input" type="checkbox" name="Active"
+                                                    id="Active">
+                                                <label class="filter-btns pointer" for="Active">Active</label>
+                                            </div>
+                                            <div>
+                                                <input class="d-none m-flter-input" type="checkbox" name="block"
+                                                    id="block">
+                                                <label class="filter-btns pointer" for="block">Block</label>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center my-3">
+                                            <div class="me-4">
+                                                <input class="d-none m-flter-input" type="checkbox" name="Male"
+                                                    id="Male">
+                                                <label class="filter-btns pointer" for="Male">Male</label>
+                                            </div>
+                                            <div>
+                                                <input class="d-none m-flter-input" type="checkbox" name="female"
+                                                    id="female">
+                                                <label class="filter-btns pointer" for="female">Female</label>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center mt-5">
+                                            <input
+                                                class="btn-orange-solid border-0 px-5 py-2 fs-5 text-white rounded-3"
+                                                type="submit" value="Apply Now">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="my-shadow rounded my-4 py-3">
@@ -553,7 +600,29 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        function togglefilterform() {
+            var x = document.getElementById("search-filter-form");
+            if (x.style.display === "none" || x.style.display === "") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        $(document).ready(function () {
+            $("#filter-select-all").click(function () {
+                $(".m-flter-input").prop("checked", this.checked);
+            });
 
+            $(".m-flter-input").click(function () {
+                if ($(".m-flter-input:checked").length === $(".m-flter-input").length) {
+                    $("#filter-select-all").prop("checked", true);
+                } else {
+                    $("#filter-select-all").prop("checked", false);
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

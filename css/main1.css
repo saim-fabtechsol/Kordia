@@ -40,7 +40,11 @@
   height: 15px;
   object-fit: contain;
 }
-
+.icon-12px{
+  width: 12px;
+  height: 12px;
+  object-fit: contain;
+}
 .icon-20px {
   width: 20px;
   height: 20px;
@@ -142,6 +146,10 @@
   max-width: 300px;
   margin-left: auto;
   margin-right: auto;
+}
+.card:hover{
+  transform: none;
+  transition: .5s;
 }
 
 .testimonial-img-box {
@@ -372,7 +380,8 @@
   min-width: 450px;
   min-height: 250px;
 }
-.side-bar-top::-webkit-scrollbar{
+.side-bar-top::-webkit-scrollbar
+,.scroll-bar-y-hidden::-webkit-scrollbar{
   width: 0;
 }
 .musician-table .status.active{
@@ -593,6 +602,83 @@
   height: 200px;
   border: 2px solid var(--main-blue);
   padding: 2px;
+}
+.pending-amount-table{
+  max-height: 600px;
+}
+.pending-amount-table thead th p{
+  color: var(--main-blue);
+  border-bottom: 2px solid var(--main-blue);
+  display: inline;
+  padding:0 8px 4px;
+}
+.pending-amount-table tbody td{
+  align-content: center;
+  text-align: center;
+}
+.pending-amount-table tbody td:first-child{
+  text-align: start;
+}
+
+.search-musician .nav-tabs {
+  border: none;
+}
+
+.search-musician .nav-tabs .nav-link {
+  border: none;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.search-musician .nav-tabs .nav-item {
+  margin: 12px 0;
+}
+
+.search-musician .nav-tabs .nav-link.active {
+  opacity: 1;
+  background: none;
+  transform: scale(1.1);
+}
+
+.search-musician .nav-tabs .nav-link img {
+  max-width: 100px;
+}
+.chat-musician-hover-content{
+  bottom: 20%;
+  transition: .5s;
+  opacity: 0;
+  background-image: linear-gradient(179.89deg, rgba(0, 0, 0, 0) 0.1%, #000000 111.68%);
+}
+
+.chat-musician-box:hover .chat-musician-hover-content{
+  bottom: 50px;
+  opacity: 1;
+  bottom: 0;
+}
+
+.aspect-ratio-1{
+  aspect-ratio: 1/1;
+}
+
+
+.signature-container {
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  position: relative;
+}
+.abcdef canvas {
+  width: 100%;
+  height: 200px;
+  cursor: crosshair;
+}
+.abcdef .buttons {
+  text-align: center;
+  margin-top: 10px;
+}
+.abcdef button {
+  margin: 5px;
 }
 
 @media screen and (max-width:1200px) {
