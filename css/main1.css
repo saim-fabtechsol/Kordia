@@ -322,14 +322,14 @@
 /* ----------------------------- contact Us Radio ----------------------------- */
 
 .template-logo {
-  max-width: 200px;
+  max-width: 150px;
   max-height: 50px;
   object-fit: contain;
 }
 
 .template-profile-img {
-  width: 60px;
-  height: 60px;
+  width: 56px;
+  height: 56px;
 }
 
 .template-body {
@@ -352,12 +352,12 @@
 }
 
 .side-bar-links {
-  font-size: 20px;
   color: var(--main-blue);
   text-decoration: none;
   display: flex;
   align-items: center;
-  padding: 16px 8px 16px 16px;
+  padding: 10px 8px 10px 16px;
+  margin: 8px 0;
 }
 .side-bar-links.active{
   color: var(--main-orange);
@@ -370,11 +370,11 @@
   transform: none !important;
 }
 .side-bar-dropdown-btn{
-  padding: 16px 0;
+  padding: 10px 0;
   color: var(--main-blue);
   display: flex;
   align-items: center;
-  font-size: 20px;
+  margin: 8px 0;
 }
 .db-revenue-graph{
   min-width: 450px;
@@ -680,7 +680,9 @@
 .abcdef button {
   margin: 5px;
 }
-
+.side-bar-links:first-child {
+  margin-top: 0
+}
 @media screen and (max-width:1200px) {
   .template-right {
     width: 100%;
