@@ -188,8 +188,8 @@ body {
     background-color: var(--main-orange);
 }
 .navbar-logo{
-    width: 75px;
-    height: 75px;
+    width: 60px;
+    height: 60px;
     object-fit: contain;
 }
 
