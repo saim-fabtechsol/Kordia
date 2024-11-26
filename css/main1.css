@@ -286,7 +286,8 @@
 }
 
 .contact-info-card {
-  min-height: 600px;
+  min-height: 400px;
+  height: 100%;
   background-image: url(../images/conatct-info-card-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
