@@ -71,7 +71,7 @@
                                 <ul class="dropdown-menu pt-3 pb-0">
                                     <li><a class="side-bar-links" href="#">Create Event</a></li>
                                     <li><a class="side-bar-links" href="#">My Event</a></li>
-                                    <li><a class="side-bar-links pb-0" href="#">Event Quote Sent</a></li>
+                                    <li><a class="side-bar-links pb-0 mb-0" href="#">Event Quote Sent</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -87,7 +87,7 @@
                                 <ul class="dropdown-menu pt-3 pb-0">
                                     <li><a class="side-bar-links" href="#">Pending Requests</a></li>
                                     <li><a class="side-bar-links" href="#">Accepted Requests</a></li>
-                                    <li><a class="side-bar-links pb-0" href="#">Rejected Requests</a></li>
+                                    <li><a class="side-bar-links pb-0 mb-0" href="#">Rejected Requests</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -105,72 +105,99 @@
                                     <div class="d-flex align-items-center">
                                         <img class="icon-20px ms-3 me-2" src="../images/payments-blue.png" alt="">
                                         <span class="me-2">Payments</span>
-                                        <i class="fa-solid fa-chevron-down ms-auto"></i>
+                                        <i class="fa-solid fa-chevron-down"></i>
                                     </div>
                                 </div>
                                 <ul class="dropdown-menu pt-3 pb-0">
                                     <li><a class="side-bar-links" href="#">Payments Overview</a></li>
                                     <li><a class="side-bar-links" href="#">Pending Payments</a></li>
                                     <li><a class="side-bar-links" href="#">Completed Payments</a></li>
-                                    <li><a class="side-bar-links pb-0" href="#">Bank Details</a></li>
+                                    <li><a class="side-bar-links pb-0 mb-0" href="#">Bank Details</a></li>
                                 </ul>
                             </div>
-                        </div>
+                        </div>                        
+                        <a href="#" class="side-bar-links">
+                            <img class="icon-20px me-2" src="../images/help-blue.png" alt="">
+                            <span>Help & Support</span>
+                        </a>
+                        <a href="#" class="side-bar-links">
+                            <img class="icon-20px me-2" src="../images/setting-blue.png" alt="">
+                            <span>Settings</span>
+                        </a>
                     </div>
                 </div>
                 <div class="d-flex justify-content-center mt-2 mb-3">
-                    <a class="fs-5 py-3 px-5 text-decoration-none border border-3 border-orange text-main-orange rounded"
-                        href="#">Logout</a>
+                    <a class="py-2 px-5 text-decoration-none bg-main-blue text-main-orange rounded" href="#">Logout</a>
                 </div>
             </div>
             <div class="template-right h-100 py-2 container-fluid">
                 <div class="overflow-auto h-100 p-3">
                     <div class="row">
-                        <div class="col-sm-6 col-md-4 p-3">
+                        <div class="col-sm-6 col-md-4 col-xxl-3 p-3">
                             <div class="h-100 bg-white rounded-4 my-shadow p-3">
                                 <div class="d-flex justify-content-between">
                                     <div>
-                                        <h4 class="fw-bold text-dull-blue">Event Created</h4>
-                                        <p class="fs-2 fw-bold">10</p>
+                                        <h4 class="fw-semibold fs-5 text-dull-blue">Event Created</h4>
+                                        <p class="fs-4 fw-bold">10</p>
                                     </div>
                                     <div>
-                                        <img class="img-80px rounded-4 ms-2" src="../images/db-event-created.png" alt="img">
+                                        <img class="img-50px rounded-4 ms-2" src="../images/db-event-created.png"
+                                            alt="img">
                                     </div>
                                 </div>
                                 <div>
-                                    <p class="mb-0 text-secondary-blue fs-5">The Number of created events </p>
+                                    <p class="mb-0 text-secondary-blue">The Number of created events </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 p-3">
+                        <div class="col-sm-6 col-md-4 col-xxl-3 p-3">
                             <div class="h-100 bg-white rounded-4 my-shadow p-3">
                                 <div class="d-flex justify-content-between">
                                     <div>
-                                        <h4 class="fw-bold text-dull-blue">Event Quote Sent</h4>
-                                        <p class="fs-2 fw-bold">20</p>
+                                        <h4 class="fw-semibold fs-5 text-dull-blue">Ongoing Events</h4>
+                                        <p class="fs-4 fw-bold">20</p>
                                     </div>
                                     <div>
-                                        <img class="img-80px rounded-4 ms-2" src="../images/db-event-quotes.png" alt="img">
+                                        <img class="img-50px rounded-4 ms-2" src="../images/db-event-created.png"
+                                            alt="img">
                                     </div>
                                 </div>
                                 <div>
-                                    <p class="mb-0 text-secondary-blue fs-5">The Number of Quote send</p>
+                                    <p class="mb-0 text-secondary-blue">The Number of Events  Ongoing</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 p-3">
+                        <div class="col-sm-6 col-md-4 col-xxl-3 p-3">
                             <div class="h-100 bg-white rounded-4 my-shadow p-3">
                                 <div class="d-flex justify-content-between">
                                     <div>
-                                        <h4 class="fw-bold text-dull-blue">Pending Amount</h4>
-                                        <p class="fs-2 fw-bold">$2000</p>
+                                        <h4 class="fw-semibold fs-5 text-dull-blue">Pending Amount</h4>
+                                        <p class="fs-4 fw-bold">$2000</p>
                                     </div>
                                     <div>
-                                        <img class="img-80px rounded-4 ms-2" src="../images/db-pending-amount.png" alt="img">
+                                        <img class="img-50px rounded-4 ms-2" src="../images/db-pending-amount.png"
+                                            alt="img">
                                     </div>
                                 </div>
                                 <div>
-                                    <p class="mb-0 text-secondary-blue fs-5">The Total Pending Amount</p>
+                                    <p class="mb-0 text-secondary-blue">The Total Pending Amount</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-xxl-3 p-3">
+                            <div class="h-100 bg-white rounded-4 my-shadow p-3">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <h4 class="fw-semibold fs-5 text-dull-blue">Total applications</h4>
+                                        <p class="fs-4 fw-bold">$20</p>
+                                    </div>
+                                    <div>
+                                        <img class="img-50px rounded-4 ms-2" src="../images/db-event-created.png"
+                                            alt="img">
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="mb-0 text-secondary-blue">Total awaiting musician applications or responses.</p>
                                 </div>
                             </div>
                         </div>
@@ -178,27 +205,41 @@
                     <div class="row mt-4">
                         <div class="col-lg-8 px-3 d-flex justify-content-between">
                             <h5 class="fw-semibold">
-                                Pending Amount 
+                                Pending Amount
                             </h5>
                             <a class="text-main-orange text-decoration-none" href="#">
                                 See all <i class="fa fa-chevron-right" aria-hidden="true"></i>
                             </a>
                         </div>
-                        <div class="col-lg-8 p-3">
+                        <div class="p-3">
                             <div class="p-2 bg-white rounded-4 my-shadow">
                                 <div class="pending-amount-table overflow-auto scroll-bar-y-hidden">
                                     <table class="table table-borderless text-nowrap">
                                         <thead>
                                             <tr>
-                                                <th></th>
                                                 <th>
                                                     <div class="w-100 d-flex">
-                                                        <p class="mb-0 mx-auto">Due date & time</p>
+                                                        <p class="mb-0">Musicians</p>
                                                     </div>
                                                 </th>
                                                 <th>
                                                     <div class="w-100 d-flex">
-                                                        <p class="mb-0 mx-auto">Amount</p>
+                                                        <p class="mb-0">Event Name</p>
+                                                    </div>
+                                                </th>
+                                                <th>
+                                                    <div class="w-100 d-flex">
+                                                        <p class="mb-0">Due date & time</p>
+                                                    </div>
+                                                </th>
+                                                <th>
+                                                    <div class="w-100 d-flex">
+                                                        <p class="mb-0">Amount</p>  
+                                                    </div>
+                                                </th>
+                                                <th>
+                                                    <div class="w-100 d-flex">
+                                                        <p class="mb-0 mx-auto">Action</p>
                                                     </div>
                                                 </th>
                                             </tr>
@@ -208,135 +249,140 @@
                                                 <td>
                                                     <div class="d-flex align-items-center">
                                                         <div>
-                                                            <img class="img-60px object-fit-cover rounded-circle me-3" src="../images/Erin-Press.png" alt="im">
+                                                            <img class="img-50px object-fit-cover rounded-circle me-3"
+                                                                src="../images/Erin-Press.png" alt="im">
                                                         </div>
                                                         <div>
-                                                           <p class="mb-0 fs-5 fw-semibold text-main-blue">Erin Press</p>
-                                                           <p class="mb-0 text-secondary-blue">Musician</p>
+                                                            <p class="mb-0 fw-medium text-main-blue">Erin Press</p>
                                                         </div>
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <p class="mb-0 text-main-blue fw-medium">10/10/24 : 23:00:00</p>
+                                                    <p class="mb-0 text-main-blue">Summer Jazz Festival</p>
                                                 </td>
                                                 <td>
-                                                    <p class="mb-0 text-red fs-5 fw-medium">-850</p>
+                                                    <p class="mb-0 text-main-blue">10/10/24 : 23:00:00</p>
+                                                </td>
+                                                <td>
+                                                    <p class="mb-0 text-red">-850</p>
+                                                </td>
+                                                <td>
+                                                    <div class="w-100 h-100 d-flex justify-content-center align-items-center">
+                                                        <a class="btn-orange-solid text-white py-1 px-3 rounded-pill" href="#">Pay Now</a>
+                                                    </div>
+                                                </td>   
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div>
+                                                            <img class="img-50px object-fit-cover rounded-circle me-3"
+                                                                src="../images/eventorganizer2.png" alt="im">
+                                                        </div>
+                                                        <div>
+                                                            <p class="mb-0 fw-medium text-main-blue">Ryan Dias</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <p class="mb-0 text-main-blue">Summer Jazz Festival</p>
+                                                </td>
+                                                <td>
+                                                    <p class="mb-0 text-main-blue">10/10/24 : 23:00:00</p>
+                                                </td>
+                                                <td>
+                                                    <p class="mb-0 text-red">-850</p>
+                                                </td>
+                                                <td>
+                                                    <div class="w-100 h-100 d-flex justify-content-center align-items-center">
+                                                        <a class="btn-orange-solid text-white py-1 px-3 rounded-pill" href="#">Pay Now</a>
+                                                    </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <div class="d-flex align-items-center">
                                                         <div>
-                                                            <img class="img-60px object-fit-cover rounded-circle me-3" src="../images/eventorganizer2.png" alt="im">
+                                                            <img class="img-50px object-fit-cover rounded-circle me-3"
+                                                                src="../images/eventorganizer3.png" alt="im">
                                                         </div>
                                                         <div>
-                                                           <p class="mb-0 fs-5 fw-semibold text-main-blue">Ryan Dias</p>
-                                                           <p class="mb-0 text-secondary-blue">Musician</p>
+                                                            <p class="mb-0 fw-medium text-main-blue">Jaxson George</p>
                                                         </div>
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <p class="mb-0 text-main-blue fw-medium">10/10/24 : 23:00:00</p>
+                                                    <p class="mb-0 text-main-blue">Summer Jazz Festival</p>
                                                 </td>
                                                 <td>
-                                                    <p class="mb-0 text-red fs-5 fw-medium">-850</p>
+                                                    <p class="mb-0 text-main-blue">10/10/24 : 23:00:00</p>
+                                                </td>
+                                                <td>
+                                                    <p class="mb-0 text-red">-850</p>
+                                                </td>
+                                                <td>
+                                                    <div class="w-100 h-100 d-flex justify-content-center align-items-center">
+                                                        <a class="btn-orange-solid text-white py-1 px-3 rounded-pill" href="#">Pay Now</a>
+                                                    </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <div class="d-flex align-items-center">
                                                         <div>
-                                                            <img class="img-60px object-fit-cover rounded-circle me-3" src="../images/eventorganizer3.png" alt="im">
+                                                            <img class="img-50px object-fit-cover rounded-circle me-3"
+                                                                src="../images/eventorganizer1.png" alt="im">
                                                         </div>
                                                         <div>
-                                                           <p class="mb-0 fs-5 fw-semibold text-main-blue">Jaxson George</p>
-                                                           <p class="mb-0 text-secondary-blue">Musician</p>
+                                                            <p class="mb-0 fw-medium text-main-blue">Davis Press</p>
                                                         </div>
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <p class="mb-0 text-main-blue fw-medium">10/10/24 : 23:00:00</p>
+                                                    <p class="mb-0 text-main-blue">Summer Jazz Festival</p>
                                                 </td>
                                                 <td>
-                                                    <p class="mb-0 text-red fs-5 fw-medium">-850</p>
+                                                    <p class="mb-0 text-main-blue">10/10/24 : 23:00:00</p>
+                                                </td>
+                                                <td>
+                                                    <p class="mb-0 text-red">-850</p>
+                                                </td>
+                                                <td>
+                                                    <div class="w-100 h-100 d-flex justify-content-center align-items-center">
+                                                        <a class="btn-orange-solid text-white py-1 px-3 rounded-pill" href="#">Pay Now</a>
+                                                    </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <div class="d-flex align-items-center">
                                                         <div>
-                                                            <img class="img-60px object-fit-cover rounded-circle me-3" src="../images/eventorganizer1.png" alt="im">
+                                                            <img class="img-50px object-fit-cover rounded-circle me-3"
+                                                                src="../images/eventorganizer4.png" alt="im">
                                                         </div>
                                                         <div>
-                                                           <p class="mb-0 fs-5 fw-semibold text-main-blue">Davis Press</p>
-                                                           <p class="mb-0 text-secondary-blue">Musician</p>
+                                                            <p class="mb-0 fw-medium text-main-blue">Angel Westervelt
+                                                            </p>
                                                         </div>
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <p class="mb-0 text-main-blue fw-medium">10/10/24 : 23:00:00</p>
+                                                    <p class="mb-0 text-main-blue">Summer Jazz Festival</p>
                                                 </td>
                                                 <td>
-                                                    <p class="mb-0 text-red fs-5 fw-medium">-850</p>
+                                                    <p class="mb-0 text-main-blue">10/10/24 : 23:00:00</p>
+                                                </td>
+                                                <td>
+                                                    <p class="mb-0 text-red">-850</p>
+                                                </td>
+                                                <td>
+                                                    <div class="w-100 h-100 d-flex justify-content-center align-items-center">
+                                                        <a class="btn-orange-solid text-white py-1 px-3 rounded-pill" href="#">Pay Now</a>
+                                                    </div>
                                                 </td>
                                             </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="d-flex align-items-center">
-                                                        <div>
-                                                            <img class="img-60px object-fit-cover rounded-circle me-3" src="../images/eventorganizer4.png" alt="im">
-                                                        </div>
-                                                        <div>
-                                                           <p class="mb-0 fs-5 fw-semibold text-main-blue">Angel Westervelt</p>
-                                                           <p class="mb-0 text-secondary-blue">Musician</p>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <p class="mb-0 text-main-blue fw-medium">10/10/24 : 23:00:00</p>
-                                                </td>
-                                                <td>
-                                                    <p class="mb-0 text-red fs-5 fw-medium">-850</p>
-                                                </td>
-                                            </tr>                                           
                                         </tbody>
                                     </table>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="row">
-                                <div class="col-md-6 col-lg-12 p-3">
-                                    <div class="h-100 bg-white rounded-4 my-shadow p-3">
-                                        <div class="d-flex justify-content-between">
-                                            <div>
-                                                <h4 class="fw-bold text-dull-blue">Total applications</h4>
-                                                <p class="fs-2 fw-bold">20</p>
-                                            </div>
-                                            <div>
-                                                <img class="img-80px rounded-4 ms-2" src="../images/db-event-created.png" alt="img">
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <p class="mb-0 text-secondary-blue fs-5">Total awaiting musician applications or responses.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-12 p-3">
-                                    <div class="h-100 bg-white rounded-4 my-shadow p-3">
-                                        <div class="d-flex justify-content-between">
-                                            <div>
-                                                <h4 class="fw-bold text-dull-blue">Ongoing Events</h4>
-                                                <p class="fs-2 fw-bold">20</p>
-                                            </div>
-                                            <div>
-                                                <img class="img-80px rounded-4 ms-2" src="../images/db-event-created.png" alt="img">
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <p class="mb-0 text-secondary-blue fs-5">The Number of Events  Ongoing</p>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>

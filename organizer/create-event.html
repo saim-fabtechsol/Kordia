@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/main1.css">
+    <title>Create Event</title>
+</head>
+
+<body class="home-page">
+    <header class="bg-main-blue py-2 px-3">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="me-3">
+                <a href="../index.html">
+                    <img class="template-logo w-100" src="../images/Logo.png" alt="images">
+                </a>
+            </div>
+            <div class="d-flex align-items-center">
+                <a class="me-2 position-relative" href="#">
+                    <img class="icon-20px" src="../images/bell-icon.png" alt="img">
+                    <div class="position-absolute top-0 end-0 translate-middle">
+                        <span class="text-12 text-white bg-danger rounded-circle p-1">6</span>
+                    </div>
+                </a>
+                <a class="text-decoration-none" href="editprofile.html">
+                    <div class="d-flex align-items-center">
+                        <img class="template-profile-img rounded-circle me-2" src="../images/forum-profile-2.png"
+                            alt="img">
+                        <p class="mb-0 fs-5 fw-bold text-white d-none d-sm-block">Moni Roy</p>
+                    </div>
+                </a>
+                <div class="d-xl-none pointer" onclick="displayToggle()">
+                    <div class="ms-3 text-white fs-1 d-flex align-items-center">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="template-body position-relative">
+        <div class="d-flex h-100">
+            <div class="side-bar d-xl-block border-end border-3 border-blue" id="side-bar">
+                <div class="side-bar-top overflow-y-auto">
+                    <div class="d-flex flex-column">
+                        <a href="#" class="side-bar-links">
+                            <img class="icon-20px me-2" src="../images/dashboard-blue.png" alt="">
+                            <span>Dashboard</span>
+                        </a>
+                        <a href="#" class="side-bar-links">
+                            <img class="icon-20px me-2" src="../images/search-musician-blue.png" alt="">
+                            <span>Search Musicians/Band</span>
+                        </a>
+                        <a href="#" class="side-bar-links">
+                            <img class="icon-20px me-2" src="../images/schedules-blue.png" alt="">
+                            <span>Schedules</span>
+                        </a>
+                        <div class="side-bar-dropdown-btn">
+                            <div class="dropdown w-100">
+                                <div type="button" class="" data-bs-toggle="dropdown">
+                                    <div class="d-flex align-items-center text-main-orange">
+                                        <img class="icon-20px ms-3 me-2" src="../images/event-orange.png" alt="">
+                                        <span class="me-2">Event Management</span>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <ul class="dropdown-menu show pt-3 pb-0">
+                                    <li><a class="side-bar-links active" href="#" id="target">Create Event</a></li>
+                                    <li><a class="side-bar-links" href="#">My Event</a></li>
+                                    <li><a class="side-bar-links pb-0 mb-0" href="#">Event Quote Sent</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="side-bar-dropdown-btn">
+                            <div class="dropdown w-100">
+                                <div type="button" class="" data-bs-toggle="dropdown">
+                                    <div class="d-flex align-items-center">
+                                        <img class="icon-20px ms-3 me-2" src="../images/created-events-blue.png" alt="">
+                                        <span class="me-2">Created Events Requests</span>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <ul class="dropdown-menu pt-3 pb-0">
+                                    <li><a class="side-bar-links" href="#">Pending Requests</a></li>
+                                    <li><a class="side-bar-links" href="#">Accepted Requests</a></li>
+                                    <li><a class="side-bar-links pb-0 mb-0" href="#">Rejected Requests</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="#" class="side-bar-links">
+                            <img class="icon-20px me-2" src="../images/my-subscriptions-blue.png" alt="">
+                            <span>My Subscription</span>
+                        </a>
+                        <a href="#" class="side-bar-links">
+                            <img class="icon-20px me-2" src="../images/user-chat-blue.png" alt="">
+                            <span>Chat</span>
+                        </a>
+                        <div class="side-bar-dropdown-btn">
+                            <div class="dropdown w-100">
+                                <div type="button" class="" data-bs-toggle="dropdown">
+                                    <div class="d-flex align-items-center">
+                                        <img class="icon-20px ms-3 me-2" src="../images/payments-blue.png" alt="">
+                                        <span class="me-2">Payments</span>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <ul class="dropdown-menu pt-3 pb-0">
+                                    <li><a class="side-bar-links" href="#">Payments Overview</a></li>
+                                    <li><a class="side-bar-links" href="#">Pending Payments</a></li>
+                                    <li><a class="side-bar-links" href="#">Completed Payments</a></li>
+                                    <li><a class="side-bar-links pb-0 mb-0" href="#">Bank Details</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="#" class="side-bar-links">
+                            <img class="icon-20px me-2" src="../images/help-blue.png" alt="">
+                            <span>Help & Support</span>
+                        </a>
+                        <a href="#" class="side-bar-links">
+                            <img class="icon-20px me-2" src="../images/setting-blue.png" alt="">
+                            <span>Settings</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center mt-2 mb-3">
+                    <a class="py-2 px-5 text-decoration-none bg-main-blue text-main-orange rounded" href="#">Logout</a>
+                </div>
+            </div>
+            <div class="template-right h-100 py-2 container-fluid">
+                <div class="overflow-auto h-100 p-3">
+                    <form>
+                        <h4 class="text-main-blue border-bottom pb-1">Event Information</h4>
+                        <div class="row">
+                            <div class="col-md-6 mt-2">
+                                <div>
+                                    <label class="text-main-orange form-label fw-medium text-uppercase"
+                                        for="event-name">Event Name</label>
+                                    <div class="form-control focus-none p-0">
+                                        <input class="form-control border-0 focus-none" type="text" name="event-name"
+                                            id="event-name">
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <label class="text-main-orange form-label fw-medium text-uppercase"
+                                        for="Event-Type">Event Type</label>
+                                    <div class="form-control focus-none p-0">
+                                        <select class="form-select focus-none border-0" name="Event-Type"
+                                            id="Event-Type">
+                                            <option value="Value" hidden disabled selected>Value</option>
+                                            <option value="CorporateEvent">Corporate Event</option>
+                                            <option value="Concert">Concert</option>
+                                            <option value="Wedding">Wedding</option>
+                                            <option value="PrivateEvent">Private Event</option>
+                                            <option value="RecordingSession">Recording Session</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <label class="text-main-orange form-label fw-medium text-uppercase"
+                                        for="event-location">Event Location / Venue / Address</label>
+                                    <div class="form-control focus-none p-0">
+                                        <input class="form-control border-0 focus-none" type="text"
+                                            name="event-location" id="event-location">
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <label class="text-main-orange form-label fw-medium text-uppercase"
+                                        for="Event-Description">Event Description</label>
+                                    <div class="form-control focus-none p-0">
+                                        <textarea class="form-control border-0 focus-none resize-none" rows="4"
+                                            name="Event-Description" id="Event-Description"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-6 p-2">
+                                        <div class="create-event-preview rounded-3">
+                                            <label class="w-100 pointer rounded-inherit" for="createeventimg1">
+                                                <div
+                                                    class="position-absolute z-1 text-secondary d-flex flex-column justify-content-center align-items-center w-100 h-100 top-0 start-0 border rounded-inherit">
+                                                    <i class="fas fa-plus"></i>
+                                                    <p class="mb-0 mt-2 text-center small">Add Image</p>
+                                                </div>
+                                                <div
+                                                    class="position-absolute z-2 w-100 h-100 rounded-inherit top-0 start-0">
+                                                    <img id="CE-img-1"
+                                                        class="w-100 h-100 object-fit-cover rounded-inherit display-none"
+                                                        src="../images/search-musician6.png" alt="img">
+                                                </div>
+                                            </label>
+                                            <div class="position-absolute z-3 end-0 top-0 display-none"
+                                                id="reset-btn-1">
+                                                <div class="pointer rounded-circle m-2">
+                                                    <img class="icon-20px rounded-inherit"
+                                                        src="../images/x-circle-icon.png" alt="img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <input class="d-none" type="file" name="createeventimg1" id="createeventimg1">
+                                    </div>
+                                    <div class="col-6 p-2">
+                                        <div class="create-event-preview rounded-3">
+                                            <label class="w-100 pointer rounded-inherit" for="createeventimg2">
+                                                <div
+                                                    class="position-absolute z-1 text-secondary d-flex flex-column justify-content-center align-items-center w-100 h-100 top-0 left-0 border rounded-inherit">
+                                                    <i class="fas fa-plus"></i>
+                                                    <p class="mb-0 mt-2 text-center small">Add Image</p>
+                                                </div>
+                                                <div
+                                                    class="position-absolute z-2 w-100 h-100 rounded-inherit top-0 start-0">
+                                                    <img id="CE-img-2"
+                                                        class="w-100 h-100 object-fit-cover rounded-inherit display-none"
+                                                        src="../images/search-musician6.png" alt="img">
+                                                </div>
+                                            </label>
+                                            <div class="position-absolute z-3 end-0 top-0 display-none"
+                                                id="reset-btn-2">
+                                                <div class="pointer m-2 rounded-circle">
+                                                    <img class="icon-20px rounded-inherit"
+                                                        src="../images/x-circle-icon.png" alt="img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <input class="d-none" type="file" name="createeventimg2" id="createeventimg2">
+                                    </div>
+                                    <div class="col-6 p-2">
+                                        <div class="create-event-preview rounded-3">
+                                            <label class="w-100 pointer rounded-inherit" for="createeventimg3">
+                                                <div
+                                                    class="position-absolute text-secondary d-flex flex-column justify-content-center align-items-center w-100 h-100 top-0 left-0 border rounded-inherit">
+                                                    <i class="fas fa-plus"></i>
+                                                    <p class="mb-0 mt-2 text-center small">Add Image</p>
+                                                </div>
+                                                <div
+                                                    class="position-absolute z-2 w-100 h-100 rounded-inherit top-0 start-0">
+                                                    <img id="CE-img-3"
+                                                        class="w-100 h-100 object-fit-cover rounded-inherit display-none"
+                                                        src="../images/search-musician6.png" alt="img">
+                                                </div>
+                                            </label>
+                                            <div class="position-absolute z-3 end-0 top-0 display-none"
+                                                id="reset-btn-3">
+                                                <div class="pointer m-2 rounded-circle">
+                                                    <img class="icon-20px rounded-inherit"
+                                                        src="../images/x-circle-icon.png" alt="img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <input class="d-none" type="file" name="createeventimg3" id="createeventimg3">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-5 mt-md-2">
+                                <div>
+                                    <label class="text-main-orange form-label fw-medium text-uppercase"
+                                        for="Performance-Type">Performance Type</label>
+                                    <div class="form-control focus-none p-0">
+                                        <select class="form-select focus-none border-0" name="Performance-Type"
+                                            id="Performance-Type">
+                                            <option value="Value" hidden disabled selected>Value</option>
+                                            <option value="SoloPerformance">Solo Performance</option>
+                                            <option value="With Band">With Band</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <label class="text-main-orange form-label fw-medium text-uppercase"
+                                        for="Email">Email *</label>
+                                    <div class="form-control focus-none p-0">
+                                        <input class="form-control border-0 focus-none" type="Email" name="Email"
+                                            id="Email" required placeholder="abc@gmail.com">
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <label class="text-main-orange form-label fw-medium text-uppercase"
+                                        for="Number">Number</label>
+                                    <div class="form-control focus-none p-0">
+                                        <input class="form-control border-0 focus-none" type="tel" name="Number"
+                                            id="Number" placeholder="+123456">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 mt-3">
+                                        <label class="text-main-orange form-label fw-medium text-uppercase"
+                                            for="Eventdate">Event date</label>
+                                        <div class="form-control focus-none p-0">
+                                            <input class="form-control border-0 focus-none" type="date" name="Eventdate"
+                                                id="Eventdate">
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mt-3">
+                                        <label class="text-main-orange form-label fw-medium text-uppercase"
+                                            for="Time">Time</label>
+                                        <div class="form-control focus-none p-0">
+                                            <input class="form-control border-0 focus-none" type="date" name="Time"
+                                                id="Time">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <label class="text-main-orange form-label fw-medium text-uppercase"
+                                        for="Duration">Event Duration</label>
+                                    <div class="form-control focus-none p-0">
+                                        <input class="form-control border-0 focus-none" type="text" name="Duration"
+                                            id="Duration" placeholder="2 Hrs">
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <label class="text-main-orange form-label fw-medium text-uppercase"
+                                        for="Budget">Approx. Budget</label>
+                                    <div class="form-control focus-none p-0">
+                                        <input class="form-control border-0 focus-none" type="text" name="Budget"
+                                            id="Budget" placeholder="$ 1000">
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <input class="w-100 py-2 border-0 rounded-pill bg-main-orange text-white" type="submit" value="Create Event">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/f9a70f49f9.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        let createeventimg1 = document.getElementById('createeventimg1');
+        let CEimg1 = document.getElementById('CE-img-1');
+        let restbtn1 = document.getElementById('reset-btn-1');
+        createeventimg1.addEventListener('input', function (event) {
+            let CEimgs1 = event.target.files[0];
+            if (CEimgs1) {
+                CEimg1.src = URL.createObjectURL(CEimgs1)
+                CEimg1.style.display = "block"
+                restbtn1.style.display = 'block'
+            }
+        });
+        restbtn1.addEventListener('click', function () {
+            CEimg1.src = "";
+            CEimg1.style.display = "none";
+            restbtn1.style.display = "none"
+        });
+
+        let createeventimg2 = document.getElementById('createeventimg2');
+        let CEimg2 = document.getElementById('CE-img-2');
+        let restbtn2 = document.getElementById('reset-btn-2');
+        createeventimg2.addEventListener('input', function (event) {
+            let CEimgs2 = event.target.files[0];
+            if (CEimgs2) {
+                CEimg2.src = URL.createObjectURL(CEimgs2)
+                CEimg2.style.display = "block"
+                restbtn2.style.display = 'block'
+            }
+        });
+        restbtn2.addEventListener('click', function () {
+            CEimg2.src = "";
+            CEimg2.style.display = "none";
+            restbtn2.style.display = "none"
+        });
+
+        let createeventimg3 = document.getElementById('createeventimg3');
+        let CEimg3 = document.getElementById('CE-img-3');
+        let restbtn3 = document.getElementById('reset-btn-3');
+        createeventimg3.addEventListener('input', function (event) {
+            let CEimgs3 = event.target.files[0];
+            if (CEimgs3) {
+                CEimg3.src = URL.createObjectURL(CEimgs3)
+                CEimg3.style.display = "block"
+                restbtn3.style.display = 'block'
+            }
+        });
+        restbtn3.addEventListener('click', function () {
+            CEimg3.src = "";
+            CEimg3.style.display = "none";
+            restbtn3.style.display = "none"
+        });
+    </script>
+</body>
+
+</html>

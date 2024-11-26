@@ -71,7 +71,7 @@
                                 <ul class="dropdown-menu pt-3 pb-0">
                                     <li><a class="side-bar-links" href="#">Create Event</a></li>
                                     <li><a class="side-bar-links" href="#">My Event</a></li>
-                                    <li><a class="side-bar-links pb-0" href="#">Event Quote Sent</a></li>
+                                    <li><a class="side-bar-links pb-0 mb-0" href="#">Event Quote Sent</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -87,7 +87,7 @@
                                 <ul class="dropdown-menu pt-3 pb-0">
                                     <li><a class="side-bar-links" href="#">Pending Requests</a></li>
                                     <li><a class="side-bar-links" href="#">Accepted Requests</a></li>
-                                    <li><a class="side-bar-links pb-0" href="#">Rejected Requests</a></li>
+                                    <li><a class="side-bar-links pb-0 mb-0" href="#">Rejected Requests</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -105,21 +105,29 @@
                                     <div class="d-flex align-items-center">
                                         <img class="icon-20px ms-3 me-2" src="../images/payments-blue.png" alt="">
                                         <span class="me-2">Payments</span>
-                                        <i class="fa-solid fa-chevron-down ms-auto"></i>
+                                        <i class="fa-solid fa-chevron-down"></i>
                                     </div>
                                 </div>
                                 <ul class="dropdown-menu pt-3 pb-0">
                                     <li><a class="side-bar-links" href="#">Payments Overview</a></li>
                                     <li><a class="side-bar-links" href="#">Pending Payments</a></li>
                                     <li><a class="side-bar-links" href="#">Completed Payments</a></li>
-                                    <li><a class="side-bar-links pb-0" href="#">Bank Details</a></li>
+                                    <li><a class="side-bar-links pb-0 mb-0" href="#">Bank Details</a></li>
                                 </ul>
                             </div>
                         </div>
+                        <a href="#" class="side-bar-links">
+                            <img class="icon-20px me-2" src="../images/help-blue.png" alt="">
+                            <span>Help & Support</span>
+                        </a>
+                        <a href="#" class="side-bar-links">
+                            <img class="icon-20px me-2" src="../images/setting-blue.png" alt="">
+                            <span>Settings</span>
+                        </a>
                     </div>
                 </div>
                 <div class="d-flex justify-content-center mt-2 mb-3">
-                    <a class="fs-5 py-3 px-5 text-decoration-none border border-3 border-orange text-main-orange rounded"
+                    <a class="py-2 px-5 text-decoration-none bg-main-blue text-main-orange rounded"
                         href="#">Logout</a>
                 </div>
             </div>
@@ -195,9 +203,9 @@
                                                     <label class="filter-btns pointer" for="Coros">Coros</label>
                                                 </div>
                                             </div>
-                                            <div class="d-flex justify-content-center mt-5">
+                                            <div class="d-flex justify-content-center mt-4">
                                                 <input
-                                                    class="btn-orange-solid border-0 px-5 py-2 fs-5 text-white rounded-3"
+                                                    class="btn-orange-solid border-0 px-5 py-2 text-white rounded-3"
                                                     type="submit" value="Apply Now">
                                             </div>
                                         </form>
@@ -207,14 +215,14 @@
                             <div class="p-3">
                                 <div class="d-flex flex-wrap align-items-center">
                                     <div class="my-2">
-                                        <select class="form-select focus-none border-0" name="sortbt" id="sortby">
+                                        <select class="form-select focus-none sort-by-bg border-0 rounded-pill" name="sortbt" id="sortby">
                                             <option class="d-none" value="Sortby" selected disabled>Sort By</option>
                                             <option value="newestfirst">Newest first</option>
                                             <option value="oldestfirst">Oldest first</option>
                                         </select>
                                     </div>
                                     <div class="ms-4 my-2">
-                                        <select class="form-select focus-none border-0" name="filterby" id="filterby">
+                                        <select class="form-select focus-none sort-by-bg border-0 rounded-pill" name="filterby" id="filterby">
                                             <option class="d-none" value="filterby" selected disabled>Filter By</option>
                                             <option value="option1">Option 1</option>
                                             <option value="option2">Option 2</option>
@@ -233,7 +241,7 @@
                                             aria-controls="ensembles" aria-selected="false">
                                             <div class="d-flex flex-column align-items-center">
                                                 <img class="w-100" src="../images/ensembles.png" alt="img">
-                                                <p class="mb-0 text-main-blue fw-medium text-center">Ensembles</p>
+                                                <p class="mb-0 text-main-blue fw-medium text-center small">Ensembles</p>
                                             </div>
                                         </a>
                                     </li>
@@ -243,7 +251,7 @@
                                             aria-selected="false">
                                             <div class="d-flex flex-column align-items-center">
                                                 <img class="w-100" src="../images/projects.png" alt="img">
-                                                <p class="mb-0 text-main-blue fw-medium text-center">Projects</p>
+                                                <p class="mb-0 text-main-blue fw-medium text-center small">Projects</p>
                                             </div>
                                         </a>
                                     </li>
@@ -252,7 +260,7 @@
                                             type="button" role="tab" aria-controls="bands" aria-selected="false">
                                             <div class="d-flex flex-column align-items-center">
                                                 <img class="w-100" src="../images/bands.png" alt="img">
-                                                <p class="mb-0 text-main-blue fw-medium text-center">Bands</p>
+                                                <p class="mb-0 text-main-blue fw-medium text-center small">Bands</p>
                                             </div>
                                         </a>
                                     </li>
@@ -262,7 +270,7 @@
                                             aria-selected="true">
                                             <div class="d-flex flex-column align-items-center">
                                                 <img class="w-100" src="../images/Musician.png" alt="img">
-                                                <p class="mb-0 text-main-blue fw-medium text-center">Musician</p>
+                                                <p class="mb-0 text-main-blue fw-medium text-center small">Musician</p>
                                             </div>
                                         </a>
                                     </li>
@@ -272,7 +280,7 @@
                                             aria-controls="musical-genre" aria-selected="false">
                                             <div class="d-flex flex-column align-items-center">
                                                 <img class="w-100" src="../images/Musical-genre.png" alt="img">
-                                                <p class="mb-0 text-main-blue fw-medium text-center">Musical genre</p>
+                                                <p class="mb-0 text-main-blue fw-medium text-center small">Musical genre</p>
                                             </div>
                                         </a>
                                     </li>
@@ -306,7 +314,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -336,7 +344,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -366,7 +374,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -396,7 +404,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -426,7 +434,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -456,7 +464,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -486,7 +494,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -516,7 +524,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -546,7 +554,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -576,7 +584,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -606,7 +614,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -636,7 +644,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -666,7 +674,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -696,7 +704,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -726,7 +734,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -756,7 +764,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -786,7 +794,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -816,7 +824,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -846,7 +854,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -880,7 +888,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -910,7 +918,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -940,7 +948,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -970,7 +978,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -1000,7 +1008,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -1030,7 +1038,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -1060,7 +1068,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -1090,7 +1098,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -1120,7 +1128,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -1150,7 +1158,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -1180,7 +1188,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -1210,7 +1218,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -1240,7 +1248,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -1270,7 +1278,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -1300,7 +1308,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -1330,7 +1338,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -1360,7 +1368,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -1390,7 +1398,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -1420,7 +1428,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -1454,7 +1462,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -1484,7 +1492,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -1514,7 +1522,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -1544,7 +1552,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -1574,7 +1582,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -1604,7 +1612,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -1634,7 +1642,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -1664,7 +1672,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -1694,7 +1702,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -1724,7 +1732,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -1754,7 +1762,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -1784,7 +1792,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -1814,7 +1822,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -1844,7 +1852,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -1874,7 +1882,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -1904,7 +1912,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -1934,7 +1942,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -1964,7 +1972,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -1994,7 +2002,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -2028,7 +2036,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -2058,7 +2066,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -2088,7 +2096,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -2118,7 +2126,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -2148,7 +2156,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -2178,7 +2186,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -2208,7 +2216,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -2238,7 +2246,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -2268,7 +2276,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -2298,7 +2306,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -2328,7 +2336,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -2358,7 +2366,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -2388,7 +2396,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -2418,7 +2426,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -2448,7 +2456,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -2478,7 +2486,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -2508,7 +2516,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -2538,7 +2546,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -2568,7 +2576,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -2603,7 +2611,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -2633,7 +2641,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -2663,7 +2671,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -2693,7 +2701,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -2723,7 +2731,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -2753,7 +2761,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -2783,7 +2791,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -2813,7 +2821,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -2843,7 +2851,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -2873,7 +2881,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -2903,7 +2911,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -2933,7 +2941,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -2963,7 +2971,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -2993,7 +3001,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -3023,7 +3031,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -3053,7 +3061,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -3083,7 +3091,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -3113,7 +3121,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -3143,7 +3151,7 @@
                                                     <span>Chat</span>
                                                 </a>
                                                 <a class="d-flex align-items-center my-1 text-decoration-none text-white bg-main-orange px-2 py-1 me-2 border rounded-pill border-orange pointer"
-                                                    data-bs-toggle="modal" data-bs-target="#booknowform">
+                                                    href="send-quote.html">
                                                     <span>Book Now</span>
                                                     <i class="fa fa-long-arrow-right ms-1" aria-hidden="true"></i>
                                                 </a>
@@ -3158,163 +3166,6 @@
             </div>
         </div>
     </section>
-    <!-- ---------------------------------- New Plan modal ---------------------------------- -->
-    <div class="newplanModal modal fade" id="booknowform" tabindex="-1" aria-labelledby="booknowformLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content p-2 mx-sm-3 bg-main-blue rounded-5">
-                <div class="h-100 overflow-auto">
-                    <form action="">
-                        <div class="container-fluid py-4">
-                            <div class="row align-items-center">
-                                <div class="my-3">
-                                    <h2 class="fs-1 text-uppercase text-main-orange">Send a Quote Form</h2>
-                                </div>
-                                <div class="mt-3">
-                                    <div class="d-flex align-items-center">
-                                        <i class="fa fa-arrow-right fs-3 me-3 text-main-orange" aria-hidden="true"></i>
-                                        <h2 class="fs-3 fw-semibold mb-0 text-uppercase text-main-orange">Event Information</h2>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 my-3">
-                                    <label class="form-label fs-5 text-main-orange fw-semibold text-uppercase" for="planName">Event 
-                                        Name</label>
-                                    <div class="form-control focus-none p-0">
-                                        <input class="form-control focus-none border-0" type="text" name="planName"
-                                            id="planName" placeholder="Lisbon celebration night">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 my-3">
-                                    <label class="form-label fs-5 text-main-orange fw-semibold text-uppercase" for="event-type">Event 
-                                        Type</label>
-                                    <div class="form-control focus-none p-0">
-                                        <select class="form-select focus-none border-0" name="event-type" id="event-type">
-                                            <option class="d-none" value="value" selected disabled>Value</option>
-                                            <option value="option1">Option 1</option>
-                                            <option value="option2">Option 2</option>
-                                            <option value="option3">Option 3</option>
-                                            <option value="option4">Option 4</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="my-3">
-                                    <label class="form-label fs-5 text-main-orange fw-semibold text-uppercase" for="EventLocation">Event 
-                                        Location</label>
-                                    <div class="form-control focus-none p-0">
-                                        <input class="form-control focus-none border-0" type="text" name="EventLocation"
-                                            id="EventLocation" placeholder="Lisbon">
-                                    </div>
-                                </div>
-                                <div class="my-3">
-                                    <label class="form-label fs-5 fw-semibold text-main-orange text-uppercase"
-                                        for="EventDescription">Event Description</label>
-                                    <div class="form-control focus-none p-0">
-                                        <textarea class="form-control focus-none border-0 resize-none" rows="5"
-                                            name="EventDescription" id="EventDescription" placeholder="Every Month"></textarea>
-                                    </div>
-                                </div>
-                                <div class="mt-3">
-                                    <div class="d-flex align-items-center">
-                                        <i class="fa fa-arrow-right fs-3 me-3 text-main-orange" aria-hidden="true"></i>
-                                        <h2 class="fs-3 fw-semibold mb-0 text-uppercase text-main-orange">Performance Details</h2>
-                                    </div>
-                                </div>
-                                <div class="my-3">
-                                    <label class="form-label fs-5 text-main-orange fw-semibold text-uppercase" for="performance-type">performance 
-                                        Type</label>
-                                    <div class="form-control focus-none p-0">
-                                        <select class="form-select focus-none border-0" name="performance-type" id="performance-type">
-                                            <option class="d-none" value="value" selected disabled>Value</option>
-                                            <option value="option1">Option 1</option>
-                                            <option value="option2">Option 2</option>
-                                            <option value="option3">Option 3</option>
-                                            <option value="option4">Option 4</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="mt-3">
-                                    <div class="d-flex align-items-center">
-                                        <i class="fa fa-arrow-right fs-3 me-3 text-main-orange" aria-hidden="true"></i>
-                                        <h2 class="fs-3 fw-semibold mb-0 text-uppercase text-main-orange">contractor Information</h2>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 my-3">
-                                    <label class="form-label fs-5 text-main-orange fw-semibold text-uppercase" for="contractor-role">Contractor role</label>
-                                    <div class="form-control focus-none p-0">
-                                        <input class="form-control focus-none border-0" type="text" name="contractor-role"
-                                            id="contractor-role" placeholder="Musician">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 my-3">
-                                    <label class="form-label fs-5 text-main-orange fw-semibold text-uppercase" for="email">Email</label>
-                                    <div class="form-control focus-none p-0">
-                                        <input class="form-control focus-none border-0" type="email" name="email"
-                                            id="email" placeholder="abc@gmail.com">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 my-3">
-                                    <label class="form-label fs-5 text-main-orange fw-semibold text-uppercase" for="Number">Number</label>
-                                    <div class="form-control focus-none p-0">
-                                        <input class="form-control focus-none border-0" type="tel" name="Number"
-                                            id="Number" placeholder="+1234567890">
-                                    </div>
-                                </div>
-                                <div class="mt-3">
-                                    <div class="d-flex align-items-center">
-                                        <i class="fa fa-arrow-right fs-3 me-3 text-main-orange" aria-hidden="true"></i>
-                                        <h2 class="fs-3 fw-semibold mb-0 text-uppercase text-main-orange">Schedule</h2>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 my-3">
-                                    <label class="form-label fs-5 text-main-orange fw-semibold text-uppercase" for="Eventdate">Event date</label>
-                                    <div class="form-control focus-none p-0">
-                                        <input class="form-control focus-none border-0" type="date" name="Eventdate"
-                                            id="Eventdate" placeholder="Musician">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 my-3">
-                                    <label class="form-label fs-5 text-main-orange fw-semibold text-uppercase" for="Time">Time</label>
-                                    <div class="form-control focus-none p-0">
-                                        <input class="form-control focus-none border-0" type="time" name="Time"
-                                            id="Time" placeholder="23:00">
-                                    </div>
-                                </div>
-                                <div class="my-3">
-                                    <label class="form-label fs-5 text-main-orange fw-semibold text-uppercase" for="EventDuration">Event Duration</label>
-                                    <div class="form-control focus-none p-0">
-                                        <input class="form-control focus-none border-0" type="text" name="EventDuration"
-                                            id="EventDuration" placeholder="2 Hrs">
-                                    </div>
-                                </div>
-                                <div class="mt-3">
-                                    <div class="d-flex align-items-center">
-                                        <i class="fa fa-arrow-right fs-3 me-3 text-main-orange" aria-hidden="true"></i>
-                                        <h2 class="fs-3 fw-semibold mb-0 text-uppercase text-main-orange">Budget Information</h2>
-                                    </div>
-                                </div>
-                                <div class="my-3">
-                                    <label class="form-label fs-5 text-main-orange fw-semibold text-uppercase" for="ApproxBudget">Approx. Budget</label>
-                                    <div class="form-control focus-none p-0">
-                                        <input class="form-control focus-none border-0" type="text" name="ApproxBudget"
-                                            id="ApproxBudget" placeholder="$ 500">
-                                    </div>
-                                </div>
-
-                                <div class="mt-5">
-                                    <input
-                                        class="btn-orange-solid fs-5 text-white text-uppercase border-0 w-100 py-2 rounded-pill"
-                                        type="submit" value="Create Plan">
-                                </div>
-
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ---------------------------------- New Plan modal ---------------------------------- -->
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/f9a70f49f9.js" crossorigin="anonymous"></script>
